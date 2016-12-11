@@ -24,6 +24,7 @@
 	<link href="https://oktayuyar.github.io/css/crayon.css" rel="stylesheet" type="text/css">
 	<link href="https://oktayuyar.github.io/css/crayon-theme-classic.css" rel="stylesheet" type="text/css">
 	<link href="https://oktayuyar.github.io/css/crayon-font-monaco.css" rel="stylesheet" type="text/css">
+	<link href="https://oktayuyar.github.io/css/crayon.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -98,10 +99,10 @@
                   
                     <h3>Iris Dataset Veritabanı Integrasyonu</h3>
 					Bu yazımda iris datasetin txt dosyasından okunup verilerin oluşturulan veritabanına kaydedilmesini anlatacağım.
-				<p>Ben Java'da proje geliştirirken Eclipse tercih ediyorum.Şimdi Eclipse'i açıp bir java projesi oluşturalım.Daha sonra projenin
-				üzerine gelip sağ tık yapıp configure seçeneğinden Convert to Maven Project diyoruz.Neden maven projecte çevirdiğimi ayrı bir yazıda bahsedeceğim.<br>
+				<p>Ben Java'da proje geliştirirken Eclipse tercih ediyorum.Şimdi Eclipse'i açıp DatabaseIntegration adında bir java projesi oluşturalım.Daha sonra projenin üzerine gelip sağ tık yapıp configure seçeneğinden Convert to Maven Project diyoruz.Neden maven projecte çevirdiğimi ayrı bir yazıda bahsedeceğim.<br>
 			Projemizi oluşturduktan sonra verileri ekleyeceğimiz veritabanımızı oluşturalım.Mysql veritabanı kullanacağım.
-			<div id="crayon-584be2f3ca072935402621" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">	
+			
+<div id="crayon-584be2f3ca072935402621" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">	
 			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
 			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Satır Numaralarına Geç"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Düz Koda Geç"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Satır Sarımına Geç"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Kodu Genişlet"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Kodu Yeni Pencerede Aç"><div class="crayon-button-icon"></div></div></div></div>
 			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
@@ -121,7 +122,7 @@ CREATE TABLE IF NOT EXISTS `iris` (
 				<table class="crayon-table">
 					<tr class="crayon-row">
 				<td class="crayon-nums " data-settings="show">
-					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-584be2f3ca072935402621-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-584be2f3ca072935402621-2">2</div></div><div class="crayon-num crayon-striped-num" data-line="crayon-584be2f3ca072935402621-3">3</div></div>
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-584be2f3ca072935402621-1">-</div>
 				</td>
 				<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-584be2f3ca072935402621-1"><span class="crayon-e"> create database IrisDatabase;</span><div class="crayon-line" id="crayon-584be2f3ca072935402621-2"><span class="crayon-e">use database IrisDatabase;</span><div class="crayon-e" id="crayon-584be2f3ca072935402621-3"><span class="crayon-e">CREATE TABLE IF NOT EXISTS `iris` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -139,7 +140,88 @@ CREATE TABLE IF NOT EXISTS `iris` (
 		</div>
 				Daha sonra projeye tekrar dönüyoruz, <strong>pom.xml</strong> i açalım ve <strong>mysql</strong> için dependency ekleyelim.</p>
 				<p><img class="alignleft wp-image-243 size-full" src="https://oktayuyar.github.io/img/java/pom_xml.png"  width="100%" height="250" sizes="(max-width: 729px) 100vw, 729px"></p>
-				Şimdi projemizin kodlamasına başlayabiliriz.
+				Şimdi projemizin kodlamasına başlayabiliriz.Eclipse e dönüp proje içinde src ye sağ tık yapıp IrisIntegration adında yeni bir package oluşturalım.Bu package içinde üç java classımız olacak.İlk olarak IrisIntegration package ına sağ tıklayıp DatabaseConnection adında bir java classı oluşturalım.Classımızın içeriği aşağıdaki gibi olmalıdır.<br>
+
+			<div id="crayon-584be2f3ca072935402621" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">	
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Satır Numaralarına Geç"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Düz Koda Geç"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Satır Sarımına Geç"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Kodu Genişlet"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Kodu Yeni Pencerede Aç"><div class="crayon-button-icon"></div></div></div></div>
+			
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+package IrisIntegration;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DatabaseConnection {
+	     protected static final String SERVER="jdbc:mysql://localhost:3306/IrisDatabase";
+	     protected static final String KULLANICIADI="oktay";
+	     protected static final String SIFRE="";
+	     protected Connection connection=null;
+	     
+		public void baglan(){
+	         try{
+	             Class.forName("com.mysql.jdbc.Driver");
+	             connection=DriverManager.getConnection(SERVER,KULLANICIADI,SIFRE);
+	         }
+	         catch(Exception e){
+	             System.out.println(e.getMessage());
+	         }
+	     }
+	    public void baglantiKes(){
+	         try{
+	             connection.close();
+	         }
+	         catch(Exception e){
+	             System.out.println(e.getMessage());
+	         }
+	   }
+	    
+}
+</textarea></div>			
+				<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-584be2f3ca072935402621-4">-</div>
+				</td>
+				<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-584be2f3ca072935402621-4"><span class="crayon-e">package IrisIntegration;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DatabaseConnection {
+	     protected static final String SERVER="jdbc:mysql://localhost:3306/IrisDatabase";
+	     protected static final String KULLANICIADI="oktay";
+	     protected static final String SIFRE="";
+	     protected Connection connection=null;
+	     
+		public void baglan(){
+	         try{
+	             Class.forName("com.mysql.jdbc.Driver");
+	             connection=DriverManager.getConnection(SERVER,KULLANICIADI,SIFRE);
+	         }
+	         catch(Exception e){
+	             System.out.println(e.getMessage());
+	         }
+	     }
+	    public void baglantiKes(){
+	         try{
+	             connection.close();
+	         }
+	         catch(Exception e){
+	             System.out.println(e.getMessage());
+	         }
+	   }
+	    
+}
+						</div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+
                 </div>
             </div>
         </div>
