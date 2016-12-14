@@ -98,68 +98,62 @@
                     <h3>Iris Dataset Veritabanı Integrasyonu</h3>
 					Bu yazımda iris datasetin txt dosyasından okunup verilerin oluşturulan veritabanına kaydedilmesini anlatacağım.
 				<p>Ben Java'da proje geliştirirken Eclipse tercih ediyorum.Şimdi Eclipse'i açıp DatabaseIntegration adında bir java projesi oluşturalım.Daha sonra projenin üzerine gelip sağ tık yapıp configure seçeneğinden Convert to Maven Project diyoruz.Neden maven projecte çevirdiğimi ayrı bir yazıda bahsedeceğim.<br>
-			Projemizi oluşturduktan sonra verileri ekleyeceğimiz veritabanımızı oluşturalım.Mysql veritabanı kullanacağım.</p>
+				Projemizi oluşturduktan sonra verileri ekleyeceğimiz veritabanımızı oluşturalım.Mysql veritabanı kullanacağım.</p>
 
-<div style="background: white; font-family: Helvetica">
-<pre class="brush: sql;">
-CREATE TABLE IF NOT EXISTS `iris` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `cyaprak_boyu` double DEFAULT NULL,
-  `cyaprak_eni` double DEFAULT NULL,
-  `tyaprak_boyu` double DEFAULT NULL,
-  `tyaprak_eni` double DEFAULT NULL,
-  `cicek_turu` varchar(250) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-</pre>
-</div>
-
+				<pre class="brush: sql;" style="font-size: 5">
+				CREATE TABLE IF NOT EXISTS `iris` (
+				  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+				  `cyaprak_boyu` double DEFAULT NULL,
+				  `cyaprak_eni` double DEFAULT NULL,
+				  `tyaprak_boyu` double DEFAULT NULL,
+				  `tyaprak_eni` double DEFAULT NULL,
+				  `cicek_turu` varchar(250) DEFAULT NULL,
+				  PRIMARY KEY (`id`)
+				) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+				</pre>
+				
 				Daha sonra projeye tekrar dönüyoruz, <strong>pom.xml</strong> i açalım ve <strong>mysql</strong> için dependency ekleyelim.</p>
 				<p><img class="alignleft wp-image-243 size-full" src="https://oktayuyar.github.io/img/java/pom_xml.png"  width="100%" height="250" sizes="(max-width: 729px) 100vw, 729px"></p>
 				Şimdi projemizin kodlamasına başlayabiliriz.Eclipse e dönüp proje içinde src ye sağ tık yapıp IrisIntegration adında yeni bir package oluşturalım.Bu package içinde üç java classımız olacak.İlk olarak IrisIntegration package ına sağ tıklayıp DatabaseConnection adında bir java classı oluşturalım.Classımızın içeriği aşağıdaki gibi olmalıdır.<br>
 
 
-<div style="background: white; font-family: Helvetica"><br>
-<pre class="brush: java;">
-import java.sql.Connection;
-import java.sql.DriverManager;
+				<pre class="brush: java;">
+				import java.sql.Connection;
+				import java.sql.DriverManager;
 
-public class DatabaseConnection {
-	     protected static final String SERVER="jdbc:mysql://localhost:3306/IrisDatabase";
-	     protected static final String KULLANICIADI="oktay";
-	     protected static final String SIFRE="";
-	     protected Connection connection=null;
-	     
-		public void baglan(){
-	         try{
-	             Class.forName("com.mysql.jdbc.Driver");
-	             connection=DriverManager.getConnection(SERVER,KULLANICIADI,SIFRE);
-	         }
-	         catch(Exception e){
-	             System.out.println(e.getMessage());
-	         }
-	     }
-	    public void baglantiKes(){
-	         try{
-	             connection.close();
-	         }
-	         catch(Exception e){
-	             System.out.println(e.getMessage());
-	         }
-	   }
-	    
-}
-</pre>
-</div>
+				public class DatabaseConnection {
+					     protected static final String SERVER="jdbc:mysql://localhost:3306/IrisDatabase";
+					     protected static final String KULLANICIADI="oktay";
+					     protected static final String SIFRE="";
+					     protected Connection connection=null;
+					     
+						public void baglan(){
+					         try{
+					             Class.forName("com.mysql.jdbc.Driver");
+					             connection=DriverManager.getConnection(SERVER,KULLANICIADI,SIFRE);
+					         }
+					         catch(Exception e){
+					             System.out.println(e.getMessage());
+					         }
+					     }
+					    public void baglantiKes(){
+					         try{
+					             connection.close();
+					         }
+					         catch(Exception e){
+					             System.out.println(e.getMessage());
+					         }
+					   }
+					    
+				}
+				</pre>
+
                 </div>
             </div>
         </div>
     </article>
     <hr>
-	
-
-
-</div>
+	</div>
 
     <!-- Footer -->
     <footer>
@@ -230,7 +224,8 @@ public class DatabaseConnection {
 
     <!-- Theme JavaScript -->
     <script src="https://oktayuyar.github.io/js/clean-blog.min.js"></script>
-
+ 
+    <!-- SyntaxHighlighter -->
 	<script type="text/javascript" src="https://oktayuyar.github.io/js/shCore.js"></script>
 	<script src="https://oktayuyar.github.io/js/shBrushJava.js"></script>
 	<script src="https://oktayuyar.github.io/js/shBrushJavaFX.js"></script>
