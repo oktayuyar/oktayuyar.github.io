@@ -100,6 +100,7 @@
 				<p>Ben Java'da proje geliştirirken Eclipse tercih ediyorum.Şimdi Eclipse'i açıp DatabaseIntegration adında bir java projesi oluşturalım.Daha sonra projenin üzerine gelip sağ tık yapıp configure seçeneğinden Convert to Maven Project diyoruz.Neden maven projecte çevirdiğimi ayrı bir yazıda bahsedeceğim.<br>
 				Projemizi oluşturduktan sonra verileri ekleyeceğimiz veritabanımızı oluşturalım.Mysql veritabanı kullanacağım.</p>
 
+				<div>
 				<pre class="brush: sql;" style="font-size: 5">
 				CREATE TABLE IF NOT EXISTS `iris` (
 				  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -111,12 +112,11 @@
 				  PRIMARY KEY (`id`)
 				) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 				</pre>
-				
+				</div>
 				Daha sonra projeye tekrar dönüyoruz, <strong>pom.xml</strong> i açalım ve <strong>mysql</strong> için dependency ekleyelim.</p>
 				<p><img class="alignleft wp-image-243 size-full" src="https://oktayuyar.github.io/img/java/pom_xml.png"  width="100%" height="250" sizes="(max-width: 729px) 100vw, 729px"></p>
-				Şimdi projemizin kodlamasına başlayabiliriz.Eclipse e dönüp proje içinde src ye sağ tık yapıp IrisIntegration adında yeni bir package oluşturalım.Bu package içinde üç java classımız olacak.İlk olarak IrisIntegration package ına sağ tıklayıp DatabaseConnection adında bir java classı oluşturalım.Classımızın içeriği aşağıdaki gibi olmalıdır.<br>
-
-
+				Şimdi projemizin kodlamasına başlayabiliriz.Eclipse e dönüp proje içinde src ye sağ tık yapıp IrisIntegration adında yeni bir package oluşturalım.Bu package içinde üç java classımız olacak.İlk olarak IrisIntegration package ına sağ tıklayıp DatabaseConnection adında bir java classı oluşturalım.Bu classta veritabanına bağlanacağız.Classımızın içeriği aşağıdaki gibi olmalıdır.<br>
+				<div>
 				<pre class="brush: java;">
 				import java.sql.Connection;
 				import java.sql.DriverManager;
@@ -143,11 +143,59 @@
 					         catch(Exception e){
 					             System.out.println(e.getMessage());
 					         }
-					   }
-					    
+					   }   
+				}
+				</pre></div>
+				<p>Veritabanına bağlandıktan sonra yeni bir class oluşturup veritabanındaki tablumuza göre modelimizi oluşturacağız.Insert işlemi için kodumuzu yazacağız. </p>
+				
+
+				<div>
+				<pre class="brush: java;">
+				package IrisIntegration;
+
+				import java.io.BufferedReader;
+				import java.io.FileReader;
+				import java.io.IOException;
+				import java.util.ArrayList;
+				import java.util.List;
+
+				public class Main {
+
+					public static void main(String[] args) throws IOException {
+				        IrisModel data=new IrisModel();
+				        String path = "iris.txt";
+				        int sayac=0;
+				        List<String> list = new ArrayList<String>();
+				        BufferedReader reader = new BufferedReader(new FileReader(path));
+				        String line;
+				        while ((line = reader.readLine()) != null) {
+				            list.add(line+",");
+				          
+				        }
+				        reader.close();
+				        String listString = "";
+				        for(String s : list){
+				           listString += s;
+				        }
+				        System.out.println(listString); 
+				        String[] parts = listString.split(",");
+				        
+				        for(int i=0;i<=parts.length;i++){	
+				            if(i%5==0){
+				            data.setCyaprak_boyu(parts[i]);
+				            data.setCyaprak_eni(parts[i+1]);
+				            data.setTyaprak_boyu(parts[i+2]);;
+				            data.setTyaprak_eni(parts[i+3]);
+				            data.setCicekturu(parts[i+4]);
+				            data.insertIris(data);
+				            }
+				        }
+				    }
 				}
 				</pre>
+				</div>
 
+				<a href="https://yadi.sk/d/HmoY1bV533d9zJ" target="_blank" value="Deneme">Projenin kaynak koduna bu linkten ulaşabilirisiniz</a>
                 </div>
             </div>
         </div>
