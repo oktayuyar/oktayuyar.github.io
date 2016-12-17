@@ -22,6 +22,8 @@
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
+    <link type="text/css" rel="stylesheet" href="https://oktayuyar.github.io/css/shCoreDefault.css"/>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -92,12 +94,35 @@
             <div class="row">
                 <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <h3>Linux Dosya Sistemi Hiyerarşisi</h3>
-                <p>Merhaba arkadaşlar.Bu yazımda Windowstan Linux tabanlı bir işletim sistemine geçişte dosya sistemi hakkındaki değişikliklerden bahsedeceğim.
+                <p>
+                Merhaba arkadaşlar.Bu yazımda Windowstan Linux tabanlı bir işletim sistemine geçişte dosya sistemi hakkındaki değişikliklerden bahsedeceğim.
                 </p> 
-                <p>Uzun süre Windows işletim sistemini kullanan kullanıcılar Linux (Unix) temelli bir işletim sistemine geçtiklerinde tamamen farklı bir dosya sistemi hiyerarşisi ile karşılaşırlar.Windosta Program Files, Windows, System32, Documents and Settings, Application gibi klasörlerin görevleri hakkında bilgi sahibi olan kullanıcılar Linuxa geçiş yaptığında kök dizini altındaki klasörlerle karşılacaklardır.
+                <p>
+                Uzun süre Windows işletim sistemini kullanan kullanıcılar Linux (Unix) temelli bir işletim sistemine geçtiklerinde tamamen farklı bir dosya sistemi hiyerarşisi ile karşılaşırlar.Windosta Program Files, Windows, System32, Documents and Settings, Application gibi klasörlerin görevleri hakkında bilgi sahibi olan kullanıcılar Linuxa geçiş yaptığında kök dizini altındaki klasörlerle karşılacaklardır.
                 </p>  
                 <p align="center"><img class="alignleft wp-image-243 size-full"  src="https://oktayuyar.github.io/img/linux/dosya_sistemi.png"  width="70%" height="250" sizes="(max-width: 729px) 100vw, 729px"></p>
-       			<p>Dosya sistemi, işletim sisteminin bir disk veya bölüm üzerindeki dosyaları takip edebilmesi için oluşturulmuş yöntem ve veri yapıları bütünüdür. Linux'da, Unix'de olduğu gibi "Tekil Hiyerarşik Klasör Yapısı"nı benimsemiştir. Her şey " / " simgesiyle ifade edilen kök dizinden başlayarak dallanıp budaklanır. Kök dizin altındaki dizinler, geçmişte Linux Dosya Sistem Hiyerarşisi (kısaca FSSTND) denilen bir standart ile belirlenmiş klasörlerdir. Günümüzde Linux dağıtımlarının büyük çoğunluğunun FSSTND standartında belirlenmiş klasörlerin dışında kök dizine bir iki klasör daha ekledikleri ya da nadiren bu yapıdan bir klasörü çıkardıkları görülmektedir.
+       			<p>
+       			Dosya sistemi, işletim sisteminin bir disk veya bölüm üzerindeki dosyaları takip edebilmesi için oluşturulmuş yöntem ve veri yapıları bütünüdür. Linux'da, Unix'de olduğu gibi "Tekil Hiyerarşik Klasör Yapısı"nı benimsemiştir. Her şey " / " simgesiyle ifade edilen kök dizinden başlayarak dallanıp budaklanır. Kök dizin altındaki dizinler, geçmişte Linux Dosya Sistem Hiyerarşisi (kısaca FSSTND) denilen bir standart ile belirlenmiş klasörlerdir. Günümüzde Linux dağıtımlarının büyük çoğunluğunun FSSTND standartında belirlenmiş klasörlerin dışında kök dizine bir iki klasör daha ekledikleri ya da nadiren bu yapıdan bir klasörü çıkardıkları görülmektedir.
+       			</p>
+       			
+       			<pre><h3>FSSTND'a göre kök dizin altındaki temel klasörler</h3><br>Linux Dosya Sistem Hiyerarşisi (kısaca FSSTND) standartına göre kök dizin altında bulunan<br>dizinlerin görevleri <br>
+/bin   : Olması zorunlu temel komut dosyalarını içerir.<br>
+/boot  : Başlangıç için gerekli dosyaları bulundurur.<br>
+/dev   : Donanım dosyaları vardır.<br>
+/etc   : Sistem ayarlarını barındırır.<br>
+/lib   : Kütüphane dosyaları ve çekirdek modülleri bulunur.<br>
+/media : Kaldırılabilir aygıtların (CD-ROM, USB bellek vb.) sisteme eklendiği klasördür.<br>
+/mnt   : Sistem açılışında otomatik olarak bağlanan sabit disk bölümleri bu dizin altında eklenir.<br>
+/opt   : Üçüncü parti kullanıcı programlarının kurulması içindir.<br>
+/sbin  : Sistemi yöneticisiyle ilgili çalıştırabilir dosyaları tutar.<br>
+/srv   : Sistemin sunduğu hizmetlerle alakalıdır.<br>
+/tmp   : Geçici dosyaları tutmak içindir.<br>
+/usr   : Tüm kullanıcılarca paylaşılan verileri içeren dizindir.<br>
+/var   : Log dosyaları, e-posta ve yazıcı kuyrukları gibi değişken verileri barındırır.<br>
+
+   				</pre>
+       			<p>
+       			Sistemdeki bir dizin veya dosyanın adresi kök dizinden başlar (" / ") sonra o dosya/dizine ulaşmak için geçilmesi gereken dizinler arasına yine " / " yazılarak elde edilir.Örneğin " /home/oktay/Desktop/blog " yolu benim kullandığım linux mint işletim sisteminde kök dizininde, masaüstündeki blog klasörüme erişmek için vermem gereken yoldur.
        			</p>
 				</div>
             </div>
@@ -177,6 +202,13 @@
     <!-- Theme JavaScript -->
     <script src="https://oktayuyar.github.io/js/clean-blog.min.js"></script>
 
+    <!-- SyntaxHighlighter -->
+	<script type="text/javascript" src="https://oktayuyar.github.io/js/shCore.js"></script>
+	<script src="https://oktayuyar.github.io/js/shBrushJava.js"></script>
+	<script src="https://oktayuyar.github.io/js/shBrushJavaFX.js"></script>
+	<script src="https://oktayuyar.github.io/js/shBrushJScript.js"></script>
+	<script src="https://oktayuyar.github.io/js/shBrushSql.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
 </body>
 
 </html>
