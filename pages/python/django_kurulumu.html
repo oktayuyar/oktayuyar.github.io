@@ -100,11 +100,40 @@
 					Merhaba arkadaşlar bu yazımda Linux Mint üzerinde python virtual environment oluşturulması ve ilk  django projesini çalıştırmamızdan bahsedeceğim.Virtual environment oluşturmamızdaki amaç projemiz için kullanacağımız python sürümünü ve gereksinimleri sistemden izole şekilde kurup kullanabilmektir. Virtual environment Python/Django kurulumunuzu her proje için ayrı tutup izole eder.Biraz daha açmak gerekirse aynı sistemde iki farklı environment oluşturarak birinde Pyton 2.x ile flask projesi yaparken diğerinde python 3.x ile django projesi geliştirebiliriz.
 					</p>
 					<p>
-						Ben linux mint kullandığım için linux üzerinde anlatacağım.İlk olarak home dizininin içine environment adında bir kasör oluşturalım.
-					<pre class="brush: powershell;">
+						Ben linux mint kullandığım için linux üzerinde anlatacağım.Terminalimizi açalım ve ilk olarak home dizininin içine environment adında bir klasör oluşturalım ve klasörün içine girelim.
+					<pre class="brush: powershell	;">
 						oktay@oktay-asus ~ $ mkdir environment
-					</pre>
+						oktay@oktay-asus ~ $ cd environment	</pre>
+						Daha sonra aşağıdaki komutu çalıştırıyoruz.
+						<pre class="brush: powershell;">oktay@oktay-asus ~/environment $ sudo apt-get install python-virtualenv</pre>
+						Şimdi environmentımızı oluşturabiliriz.Ben python 3.4 kullanacağım için ikinci seçeneği uyguluyorum.
+						<pre class="brush: powershell;">
+						oktay@oktay-asus ~/environment $ virtualenv -p python djangoenv // Python 2.x için
+						oktay@oktay-asus ~/environment $ virtualenv -p python3 djangoenv  // Python 3.x için</pre>
+						Şimdi oluşturduğuz environment klasörünün içine giriyoruz ve aktif ediyoruz.İşlemleri düzgün bir şekilde yaptığınızda 3. satırda gördüğünüz gibi environment aktif olacaktır.
+						<pre class="brush: powershell;">
+						oktay@oktay-asus ~/environment $ cd djangoenv/
+						oktay@oktay-asus ~/environment/djangoenv $ source bin/activate
+						(djangoenv)oktay@oktay-asus ~/environment/djangoenv $ </pre>
+						Aktif ettikten sonra django frameworkünü yüklüyoruz 
+						<pre class="brush: powershell;">
+						(djangoenv)oktay@oktay-asus ~/environment/djangoenv $ pip install django==1.9</pre>
+						Bu adımları tamamladıktan sonra python projelerini tuttuğumuz dizine gidiyoruz.Artık django projemizi oluşturabiliriz. 
+						<pre class="brush: powershell;">
+						(djangoenv)oktay@oktay-asus ~/environment/djangoenv $ cd
+						(djangoenv)oktay@oktay-asus ~ $ cd PycharmProjects/
+						(djangoenv)oktay@oktay-asus ~/PycharmProjects $ python manage.py startapp firstapp
+						(djangoenv)oktay@oktay-asus ~/PycharmProjects/djangoproject $ python manage.py runserver</pre>
+						Şuanda projemiz çalışıyor ama bize make migrations ve migrate işlemlerini yapmamız ve superuser oluşturmamız için uyarı verir.Asağıdaki kodları yazdıktan sonra django projemiz sorunsuz bir şekilde çalışacaktır.
+						<pre class="brush: powershell;">
+						(djangoenv)oktay@oktay-asus ~/PycharmProjects/djangoproject $ python manage.py makemigrations
+						(djangoenv)oktay@oktay-asus ~/PycharmProjects/djangoproject $ python manage.py migrate
+						(djangoenv)oktay@oktay-asus ~/PycharmProjects/djangoproject $ python manage.py createsuperuser
+						(djangoenv)oktay@oktay-asus ~/PycharmProjects/djangoproject $ python manage.py runserver</pre>
+						Bu arada superuserı admin panele giriş için oluşturuyoruz. 
+    					<p align="center"><img class="alignleft wp-image-243 size-full"  src="https://oktayuyar.github.io/img/python/django_firstapp.png"  width="70%" height="180" sizes="(max-width: 729px) 100vw, 729px"></p>
 					</p>
+
         		</div>
             </div>
         </div>				
