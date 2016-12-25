@@ -1,17 +1,82 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.google.com/schemas/sitemap/0.84">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-    <loc>http://oktayuyar.github.io</loc>
-
-    <lastmod>2016-12-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>  
+<loc>https://oktayuyar.github.io/</loc>
+<lastmod>2016-12-25</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
 <url>
-    <loc>http://oktayuyar.github.io/</loc>
-
-    <lastmod>2016-12-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>  
+<loc>
+https://oktayuyar.github.io/pages/python/django_kurulumu.html
+</loc>
+<lastmod>2016-12-25</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>
+https://oktayuyar.github.io/pages/java/database_integration.html
+</loc>
+<lastmod>2016-12-25</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://oktayuyar.github.io/pages/java_post.html</loc>
+<lastmod>2016-12-25</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://oktayuyar.github.io/index.html</loc>
+<lastmod>2016-12-25</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>
+https://oktayuyar.github.io/pages/linux/linux_dosya_sistemi.html
+</loc>
+<lastmod>2016-12-25</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>
+https://oktayuyar.github.io/pages/python/python_adamasmaca.html
+</loc>
+<lastmod>2016-12-25</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://oktayuyar.github.io/contact.html</loc>
+<lastmod>2016-12-25</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://oktayuyar.github.io/pages/python_post.html</loc>
+<lastmod>2016-12-25</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://oktayuyar.github.io/pages/linux_post.html</loc>
+<lastmod>2016-12-25</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://oktayuyar.github.io/about.html</loc>
+<lastmod>2016-12-25</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
 </urlset>
+<!--
+<guid value="bd4843df-1bf3-4105-8dde-c449118d8a90" />
+-->
+<!--
+Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator
+-->
