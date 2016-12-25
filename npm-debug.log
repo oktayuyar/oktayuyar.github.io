@@ -1,0 +1,221 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'sitemap-static' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose cache add [ 'sitemap-static', null ]
+5 verbose cache add name=undefined spec="sitemap-static" args=["sitemap-static",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'sitemap-static',
+6 verbose parsed url   path: 'sitemap-static',
+6 verbose parsed url   href: 'sitemap-static' }
+7 silly lockFile ec357504-sitemap-static sitemap-static
+8 verbose lock sitemap-static /home/oktay/.npm/ec357504-sitemap-static.lock
+9 silly lockFile ec357504-sitemap-static sitemap-static
+10 silly lockFile ec357504-sitemap-static sitemap-static
+11 verbose addNamed [ 'sitemap-static', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 43276c28-sitemap-static sitemap-static@
+14 verbose lock sitemap-static@ /home/oktay/.npm/43276c28-sitemap-static.lock
+15 silly addNameRange { name: 'sitemap-static', range: '*', hasData: false }
+16 verbose url raw sitemap-static
+17 verbose url resolving [ 'https://registry.npmjs.org/', './sitemap-static' ]
+18 verbose url resolved https://registry.npmjs.org/sitemap-static
+19 info trying registry request attempt 1 at 15:27:13
+20 http GET https://registry.npmjs.org/sitemap-static
+21 http 200 https://registry.npmjs.org/sitemap-static
+22 silly registry.get cb [ 200,
+22 silly registry.get   { server: 'nginx/1.10.1',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'last-modified': 'Mon, 05 Dec 2016 19:50:21 GMT',
+22 silly registry.get     etag: '"5845c4fd-28c6"',
+22 silly registry.get     'cache-control': 'max-age=300',
+22 silly registry.get     'content-length': '10438',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     date: 'Sun, 25 Dec 2016 12:27:14 GMT',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '0',
+22 silly registry.get     connection: 'keep-alive',
+22 silly registry.get     'x-served-by': 'cache-fra1244-FRA',
+22 silly registry.get     'x-cache': 'MISS',
+22 silly registry.get     'x-cache-hits': '0',
+22 silly registry.get     'x-timer': 'S1482668834.124127,VS0,VE23',
+22 silly registry.get     vary: 'Accept-Encoding' } ]
+23 silly addNameRange number 2 { name: 'sitemap-static', range: '*', hasData: true }
+24 silly addNameRange versions [ 'sitemap-static',
+24 silly addNameRange   [ '0.0.0', '0.1.0', '0.2.0', '0.3.0', '0.3.1', '0.3.2', '0.4.0' ] ]
+25 verbose addNamed [ 'sitemap-static', '0.4.0' ]
+26 verbose addNamed [ '0.4.0', '0.4.0' ]
+27 silly lockFile 991a20ae-sitemap-static-0-4-0 sitemap-static@0.4.0
+28 verbose lock sitemap-static@0.4.0 /home/oktay/.npm/991a20ae-sitemap-static-0-4-0.lock
+29 silly lockFile 8cb544be--static-sitemap-static-0-4-0-tgz https://registry.npmjs.org/sitemap-static/-/sitemap-static-0.4.0.tgz
+30 verbose lock https://registry.npmjs.org/sitemap-static/-/sitemap-static-0.4.0.tgz /home/oktay/.npm/8cb544be--static-sitemap-static-0-4-0-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/sitemap-static/-/sitemap-static-0.4.0.tgz',
+31 verbose addRemoteTarball   'f12d1c06ccd90a966e07c496851396cd1dd20849' ]
+32 info retry fetch attempt 1 at 15:27:14
+33 verbose fetch to= /home/oktay/tmp/npm-10825-Wb1mKzUE/1482668834276-0.08651887020096183/tmp.tgz
+34 http GET https://registry.npmjs.org/sitemap-static/-/sitemap-static-0.4.0.tgz
+35 http 200 https://registry.npmjs.org/sitemap-static/-/sitemap-static-0.4.0.tgz
+36 verbose tar unpack /home/oktay/tmp/npm-10825-Wb1mKzUE/1482668834276-0.08651887020096183/tmp.tgz
+37 silly lockFile 0f1b8a51-4276-0-08651887020096183-package tar:///home/oktay/tmp/npm-10825-Wb1mKzUE/1482668834276-0.08651887020096183/package
+38 verbose lock tar:///home/oktay/tmp/npm-10825-Wb1mKzUE/1482668834276-0.08651887020096183/package /home/oktay/.npm/0f1b8a51-4276-0-08651887020096183-package.lock
+39 silly lockFile 51056075-4276-0-08651887020096183-tmp-tgz tar:///home/oktay/tmp/npm-10825-Wb1mKzUE/1482668834276-0.08651887020096183/tmp.tgz
+40 verbose lock tar:///home/oktay/tmp/npm-10825-Wb1mKzUE/1482668834276-0.08651887020096183/tmp.tgz /home/oktay/.npm/51056075-4276-0-08651887020096183-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm extractEntry .npmignore
+44 silly gunzTarPerm extractEntry README.md
+45 silly gunzTarPerm extractEntry index.js
+46 silly gunzTarPerm extractEntry test.js
+47 silly gunzTarPerm extractEntry demo/index.js
+48 silly gunzTarPerm extractEntry demo/index.html
+49 silly gunzTarPerm extractEntry .nyc_output/10004.json
+50 silly gunzTarPerm extractEntry .nyc_output/10006.json
+51 silly gunzTarPerm extractEntry fixtures/ignore.json
+52 silly gunzTarPerm extractEntry fixtures/one/index.html
+53 silly gunzTarPerm extractEntry fixtures/one.xml
+54 silly gunzTarPerm extractEntry fixtures/three/about.html
+55 silly gunzTarPerm extractEntry fixtures/three/author/index.html
+56 silly gunzTarPerm extractEntry fixtures/three/author/main.html
+57 silly gunzTarPerm extractEntry fixtures/three/index.html
+58 silly gunzTarPerm extractEntry fixtures/three.xml
+59 silly gunzTarPerm extractEntry fixtures/two/blah.foo
+60 silly gunzTarPerm extractEntry fixtures/two/index.html
+61 silly gunzTarPerm extractEntry fixtures/two/two.html
+62 silly gunzTarPerm extractEntry fixtures/two-ignore.xml
+63 silly gunzTarPerm extractEntry fixtures/two.xml
+64 silly gunzTarPerm extractEntry .travis.yml
+65 silly gunzTarPerm extractEntry bin/index.js
+66 silly gunzTarPerm extractEntry yarn.lock
+67 silly lockFile 0f1b8a51-4276-0-08651887020096183-package tar:///home/oktay/tmp/npm-10825-Wb1mKzUE/1482668834276-0.08651887020096183/package
+68 silly lockFile 0f1b8a51-4276-0-08651887020096183-package tar:///home/oktay/tmp/npm-10825-Wb1mKzUE/1482668834276-0.08651887020096183/package
+69 silly lockFile 51056075-4276-0-08651887020096183-tmp-tgz tar:///home/oktay/tmp/npm-10825-Wb1mKzUE/1482668834276-0.08651887020096183/tmp.tgz
+70 silly lockFile 51056075-4276-0-08651887020096183-tmp-tgz tar:///home/oktay/tmp/npm-10825-Wb1mKzUE/1482668834276-0.08651887020096183/tmp.tgz
+71 verbose tar pack [ '/home/oktay/.npm/sitemap-static/0.4.0/package.tgz',
+71 verbose tar pack   '/home/oktay/tmp/npm-10825-Wb1mKzUE/1482668834276-0.08651887020096183/package' ]
+72 verbose tarball /home/oktay/.npm/sitemap-static/0.4.0/package.tgz
+73 verbose folder /home/oktay/tmp/npm-10825-Wb1mKzUE/1482668834276-0.08651887020096183/package
+74 silly lockFile 0f1b8a51-4276-0-08651887020096183-package tar:///home/oktay/tmp/npm-10825-Wb1mKzUE/1482668834276-0.08651887020096183/package
+75 verbose lock tar:///home/oktay/tmp/npm-10825-Wb1mKzUE/1482668834276-0.08651887020096183/package /home/oktay/.npm/0f1b8a51-4276-0-08651887020096183-package.lock
+76 silly lockFile 5eda549d-sitemap-static-0-4-0-package-tgz tar:///home/oktay/.npm/sitemap-static/0.4.0/package.tgz
+77 verbose lock tar:///home/oktay/.npm/sitemap-static/0.4.0/package.tgz /home/oktay/.npm/5eda549d-sitemap-static-0-4-0-package-tgz.lock
+78 silly lockFile 0f1b8a51-4276-0-08651887020096183-package tar:///home/oktay/tmp/npm-10825-Wb1mKzUE/1482668834276-0.08651887020096183/package
+79 silly lockFile 0f1b8a51-4276-0-08651887020096183-package tar:///home/oktay/tmp/npm-10825-Wb1mKzUE/1482668834276-0.08651887020096183/package
+80 silly lockFile 5eda549d-sitemap-static-0-4-0-package-tgz tar:///home/oktay/.npm/sitemap-static/0.4.0/package.tgz
+81 silly lockFile 5eda549d-sitemap-static-0-4-0-package-tgz tar:///home/oktay/.npm/sitemap-static/0.4.0/package.tgz
+82 silly lockFile dafb7610-npm-sitemap-static-0-4-0-package /home/oktay/.npm/sitemap-static/0.4.0/package
+83 verbose lock /home/oktay/.npm/sitemap-static/0.4.0/package /home/oktay/.npm/dafb7610-npm-sitemap-static-0-4-0-package.lock
+84 silly lockFile dafb7610-npm-sitemap-static-0-4-0-package /home/oktay/.npm/sitemap-static/0.4.0/package
+85 silly lockFile dafb7610-npm-sitemap-static-0-4-0-package /home/oktay/.npm/sitemap-static/0.4.0/package
+86 verbose tar unpack /home/oktay/.npm/sitemap-static/0.4.0/package.tgz
+87 silly lockFile 7d05ecd5-npm-sitemap-static-0-4-0-package tar:///home/oktay/.npm/sitemap-static/0.4.0/package
+88 verbose lock tar:///home/oktay/.npm/sitemap-static/0.4.0/package /home/oktay/.npm/7d05ecd5-npm-sitemap-static-0-4-0-package.lock
+89 silly lockFile 5eda549d-sitemap-static-0-4-0-package-tgz tar:///home/oktay/.npm/sitemap-static/0.4.0/package.tgz
+90 verbose lock tar:///home/oktay/.npm/sitemap-static/0.4.0/package.tgz /home/oktay/.npm/5eda549d-sitemap-static-0-4-0-package-tgz.lock
+91 silly gunzTarPerm modes [ '755', '644' ]
+92 silly gunzTarPerm extractEntry package.json
+93 silly gunzTarPerm extractEntry .npmignore
+94 silly gunzTarPerm extractEntry README.md
+95 silly gunzTarPerm extractEntry index.js
+96 silly gunzTarPerm extractEntry test.js
+97 silly gunzTarPerm extractEntry .nyc_output/10004.json
+98 silly gunzTarPerm extractEntry .nyc_output/10006.json
+99 silly gunzTarPerm extractEntry fixtures/ignore.json
+100 silly gunzTarPerm extractEntry fixtures/one/index.html
+101 silly gunzTarPerm extractEntry fixtures/one.xml
+102 silly gunzTarPerm extractEntry fixtures/three/about.html
+103 silly gunzTarPerm extractEntry fixtures/three/author/index.html
+104 silly gunzTarPerm extractEntry fixtures/three/author/main.html
+105 silly gunzTarPerm extractEntry fixtures/three/index.html
+106 silly gunzTarPerm extractEntry fixtures/three.xml
+107 silly gunzTarPerm extractEntry fixtures/two/blah.foo
+108 silly gunzTarPerm extractEntry fixtures/two/index.html
+109 silly gunzTarPerm extractEntry fixtures/two/two.html
+110 silly gunzTarPerm extractEntry fixtures/two-ignore.xml
+111 silly gunzTarPerm extractEntry fixtures/two.xml
+112 silly gunzTarPerm extractEntry .travis.yml
+113 silly gunzTarPerm extractEntry yarn.lock
+114 silly gunzTarPerm extractEntry bin/index.js
+115 silly gunzTarPerm extractEntry demo/index.js
+116 silly gunzTarPerm extractEntry demo/index.html
+117 silly lockFile 7d05ecd5-npm-sitemap-static-0-4-0-package tar:///home/oktay/.npm/sitemap-static/0.4.0/package
+118 silly lockFile 7d05ecd5-npm-sitemap-static-0-4-0-package tar:///home/oktay/.npm/sitemap-static/0.4.0/package
+119 silly lockFile 5eda549d-sitemap-static-0-4-0-package-tgz tar:///home/oktay/.npm/sitemap-static/0.4.0/package.tgz
+120 silly lockFile 5eda549d-sitemap-static-0-4-0-package-tgz tar:///home/oktay/.npm/sitemap-static/0.4.0/package.tgz
+121 verbose chmod /home/oktay/.npm/sitemap-static/0.4.0/package.tgz 644
+122 verbose chown /home/oktay/.npm/sitemap-static/0.4.0/package.tgz [ 1000, 1000 ]
+123 silly lockFile 8cb544be--static-sitemap-static-0-4-0-tgz https://registry.npmjs.org/sitemap-static/-/sitemap-static-0.4.0.tgz
+124 silly lockFile 8cb544be--static-sitemap-static-0-4-0-tgz https://registry.npmjs.org/sitemap-static/-/sitemap-static-0.4.0.tgz
+125 silly lockFile 991a20ae-sitemap-static-0-4-0 sitemap-static@0.4.0
+126 silly lockFile 991a20ae-sitemap-static-0-4-0 sitemap-static@0.4.0
+127 silly lockFile 43276c28-sitemap-static sitemap-static@
+128 silly lockFile 43276c28-sitemap-static sitemap-static@
+129 silly resolved [ { name: 'sitemap-static',
+129 silly resolved     version: '0.4.0',
+129 silly resolved     description: 'generate a sitemap for a static website',
+129 silly resolved     main: 'index.js',
+129 silly resolved     scripts: { test: 'tap --coverage test.js' },
+129 silly resolved     bin: { 'sitemap-static': 'bin/index.js' },
+129 silly resolved     repository: { type: 'git', url: 'git@github.com:tmcw/sitemap-static.git' },
+129 silly resolved     keywords: [ 'sitemap', 'static', 'generate' ],
+129 silly resolved     author: { name: 'Tom MacWright' },
+129 silly resolved     license: 'ISC',
+129 silly resolved     bugs: { url: 'https://github.com/tmcw/sitemap-static/issues' },
+129 silly resolved     homepage: 'https://github.com/tmcw/sitemap-static',
+129 silly resolved     dependencies: { findit: '~1.1.1', minimist: '0.0.8' },
+129 silly resolved     devDependencies: { 'concat-stream': '^1.5.0', tap: '^1.3.2' },
+129 silly resolved     readme: '# sitemap-static\n\n[![build status](https://secure.travis-ci.org/tmcw/sitemap-static.png)](http://travis-ci.org/tmcw/sitemap-static)\n\nMake a sitemap for a static website based on files on disk\n\n## install\n\n    npm install -g sitemap-static\n\n## usage\n\nUse in the root directory of the files on the site. This will only add\nfiles with `.html` extensions to the sitemap.\n\n    sitemap-static --prefix=http://foo.bar/foo/ . > sitemap.xml\n\n## library API\n\n```javascript\nvar generateSitemap = require(\'sitemap-static\');\n\ngenerateSitemap({\n    findRoot: \'.\',\n    ignoreFile: \'\',\n    prefix: \'http://somesi.te/\',\n    pretty: false\n}, function(err, data) {\n    if(err) {\n        return console.error(err);\n    }\n\n    // xml sitemap\n    console.log(data);\n})\n```\n\n## Ignore File\n\nAdded in v0.0.1 you can pass the name of a json file to load. File file needs to be\nin your current working directory and should be an array of file names (without the / at the front)\nthat you want ignored.  You can ignore entire directories by leaving off the .html.\nExample JSON:\n\n\t[\n\t\t"ignore-me.html",\n\t\t"ignore-everything-in-me/"\n\t]\n\nExample Command:\n\n\tsitemap-static --ignore-file=ignore.json --prefix=http://foo.bar/foo/ . > sitemap.xml\n\n## Pretty URLs\n\nIf you pass `--pretty` to the CLI (or `pretty: true` to the JS API), `sitemap-static` will output pretty URLs rather than the whole path to each file. For example:\n\n| Not pretty | Pretty |\n| --- | --- |\n| `http://www.example.com/index.html` | `http://www.example.com/` |\n| `http://www.example.com/about.html` | `http://www.example.com/about` |\n| `http://www.example.com/author/index.html` | `http://www.example.com/author` |\n| `http://www.example.com/author/main.html` | `http://www.example.com/author/main` |\n\nExample Command:\n\n\tsitemap-static --prefix=http://foo.bar/foo/ --pretty . > sitemap.xml\n',
+129 silly resolved     readmeFilename: 'README.md',
+129 silly resolved     _id: 'sitemap-static@0.4.0',
+129 silly resolved     dist: { shasum: '883c88bd2a93cfaeb3ff6023ac24577ddaf397dd' },
+129 silly resolved     _from: 'sitemap-static@',
+129 silly resolved     _resolved: 'https://registry.npmjs.org/sitemap-static/-/sitemap-static-0.4.0.tgz' } ]
+130 info install sitemap-static@0.4.0 into /usr/local/lib
+131 info installOne sitemap-static@0.4.0
+132 info /usr/local/lib/node_modules/sitemap-static unbuild
+133 verbose tar unpack /home/oktay/.npm/sitemap-static/0.4.0/package.tgz
+134 silly lockFile 2ad7df02--lib-node-modules-sitemap-static tar:///usr/local/lib/node_modules/sitemap-static
+135 verbose lock tar:///usr/local/lib/node_modules/sitemap-static /home/oktay/.npm/2ad7df02--lib-node-modules-sitemap-static.lock
+136 silly lockFile 5eda549d-sitemap-static-0-4-0-package-tgz tar:///home/oktay/.npm/sitemap-static/0.4.0/package.tgz
+137 verbose lock tar:///home/oktay/.npm/sitemap-static/0.4.0/package.tgz /home/oktay/.npm/5eda549d-sitemap-static-0-4-0-package-tgz.lock
+138 silly gunzTarPerm modes [ '755', '644' ]
+139 error Error: EACCES, mkdir '/usr/local/lib/node_modules'
+139 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules']
+139 error   errno: 3,
+139 error   code: 'EACCES',
+139 error   path: '/usr/local/lib/node_modules',
+139 error   fstream_type: 'Directory',
+139 error   fstream_path: '/usr/local/lib/node_modules/sitemap-static',
+139 error   fstream_class: 'DirWriter',
+139 error   fstream_stack:
+139 error    [ '/usr/lib/nodejs/fstream/lib/writer.js:171:23',
+139 error      '/usr/lib/nodejs/mkdirp/index.js:37:53',
+139 error      'Object.oncomplete (fs.js:107:15)' ] }
+140 error Please try running this command again as root/Administrator.
+141 error System Linux 3.19.0-32-generic
+142 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "sitemap-static"
+143 error cwd /home/oktay/Github/oktayuyar.github.io
+144 error node -v v0.10.25
+145 error npm -v 1.3.10
+146 error path /usr/local/lib/node_modules
+147 error fstream_path /usr/local/lib/node_modules/sitemap-static
+148 error fstream_type Directory
+149 error fstream_class DirWriter
+150 error code EACCES
+151 error errno 3
+152 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules'
+153 error fstream_stack /usr/lib/nodejs/fstream/lib/writer.js:171:23
+153 error fstream_stack /usr/lib/nodejs/mkdirp/index.js:37:53
+153 error fstream_stack Object.oncomplete (fs.js:107:15)
+154 verbose exit [ 3, true ]
