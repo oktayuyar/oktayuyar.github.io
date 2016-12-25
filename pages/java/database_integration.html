@@ -164,7 +164,7 @@
 					private String cicekturu;
 	
 					private PreparedStatement ps;
-		
+					//Veriyi veritananına kaydettiğimiz fonksiyon
 					public boolean insertIris(IrisModel data) {
 						try {
 							DatabaseConnection vb=new DatabaseConnection();
@@ -256,19 +256,20 @@
 				        String path = "iris.txt";
 				        int sayac=0;
 				        List<String> list = new ArrayList<String>();
+						//Dataseti okuyoruz
 				        BufferedReader reader = new BufferedReader(new FileReader(path));
 				        String line;
 				        while ((line = reader.readLine()) != null) {
-				            list.add(line+",");
+				            list.add(line+","); //listeye ekliyoruz
 				          
 				        }
 				        reader.close();
 				        String listString = "";
 				        for(String s : list){
-				           listString += s;
+				           listString += s; 
 				        }
 				        System.out.println(listString); 
-				        String[] parts = listString.split(",");
+				        String[] parts = listString.split(","); //Verileri parçalayıp parts listesinde tutuyoruz
 				        
 				        for(int i=0;i<=parts.length;i++){	
 				            if(i%5==0){
