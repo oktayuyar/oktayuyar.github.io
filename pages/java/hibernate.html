@@ -95,7 +95,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <h3>Hibernate Crud İşlemleri</h3>
+                    <h3>Hibernate CRUD İşlemleri</h3>
 					<p>Merhaba arkadaşlar bu yazımda hibernate ile crud işlemlerinden bahsedeceğim.Şimdi Eclipse'i açıp Hibernate1 adında bir java projesi oluşturalım.Projenin üzerine gelip sağ tık yapıp configure seçeneğinden Convert to Maven Project diyoruz.Daha sonra <strong>pom.xml</strong> i açıp  <strong>dependency</strong> lerimizi ekleyelim.</p>
 
 					<script src="https://gist.github.com/oktayuyar/ade0138c4598aed427c993b7d143fe7d.js"></script>
@@ -106,9 +106,23 @@
 
 					<script src="https://gist.github.com/oktayuyar/a4b8a0494b022582b68566b00a060c29.js"></script>
 					
-					<p></p>
+					<p>Şimdi kodlamaya başlayabiliriz.User classımızı açıyoruz ve modelimizi oluşturuyoruz.İki seçeneğimiz var birincisi veritabanında tablomuzu oluşturmamız ve User classımızı o tabloya göre oluşturmamız ikinci seçenek ise benim kullandığım gibi tablo oluşturma işlemini programa bırakmak.Aşağıdaki gibi User classımı oluşturdum,program insert işlemi yaparken önce tabloyu User classına göre oluşturur sonra ekleme işlemi gerçekleşir.</p>
 
-				<a href="https://yadi.sk/d/309CXRqg36Hszq" target="_blank" value="Deneme">Projenin kaynak koduna buraya tıklayarak ulaşabilirisiniz</a>
+					<script src="https://gist.github.com/oktayuyar/35ec28b2ca72fbc4bc884067253dd6ea.js"></script>
+					<p>Şimdi HibernateUtility classını açıyoruz ve <strong>session</strong> ımızı oluşturalım.SessionFactory session objesini oluşturabilmek için kullanılan bir factory(fabrika) sınıfıdır . Uygulama başlarken oluşturulur ve uygulama devam ettiği sürece tek bir SessionFactory objesi kullanılır.</p>
+					
+					<script src="https://gist.github.com/oktayuyar/c3be896ac88fc583b1199b318bea05cd.js"></script>
+					
+					<p>Daha sonra UserDAO <strong>interface</strong> imizi açıyoruz ve metodlarımızı tanımlıyoruz.İnterfaceler genellikle bir sınıfın belirli metodlarını tanımlamaya ve içini kendi özelliklerine göre doldurmaya zorlamak için kullanılır.</p>
+					
+					<script src="https://gist.github.com/oktayuyar/083a6ab338a522185d96202638b6e866.js"></script>
+					<p>Şimdi UserDAOImpl classını açıyoruz ve UserDAO interface inden implemets ediyoruz.Metodları implement etmemiz için uyarı alacağız.Metodlarımızı implement ettikten sonra HibernateUtility classından session oluşturup CRUD işlemlerini yapacağımız metodları yazıyoruz.</p>
+
+					<script src="https://gist.github.com/oktayuyar/d7a2bfe6573a4df7dafbda8102797658.js"></script>
+					<p>Şimdi yazdığımız metodların çalıştığını kontrol etmek için HibernateTest classımızı açıyoruz.</p>
+					<script src="https://gist.github.com/oktayuyar/8052392191f734481dfc233b5db18367.js"></script>
+					<p>Projenin çıktısını aşağıda görebilirsiniz.<img class="alignleft wp-image-243 size-full" src="https://oktayuyar.github.io/img/java/hibernate_result.png" height="100%" sizes="(max-width: 729px) 100vw, 729px"></p>
+					<a href="https://yadi.sk/d/309CXRqg36Hszq" target="_blank" value="Deneme">Projenin kaynak koduna buraya tıklayarak ulaşabilirisiniz</a>
                 </div>
             </div>
         </div>
