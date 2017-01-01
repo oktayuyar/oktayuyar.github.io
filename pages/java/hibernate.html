@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Oktay's Blog</title>
+	<link rel="shortcut icon" href="https://oktayuyar.github.io/img/icon.png">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://oktayuyar.github.io/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="https://oktayuyar.github.io/css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://oktayuyar.github.io/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<link type="text/css" rel="stylesheet" href="https://oktayuyar.github.io/css/shCoreDefault.css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="https://oktayuyar.github.io/index.html">Home Page</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://oktayuyar.github.io/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="https://oktayuyar.github.io/pages/linux_post.html">Linux</a>
+                    </li>
+                    <li>
+                        <a href="https://oktayuyar.github.io/pages/java_post.html">Java</a>
+                    </li>
+					<li>
+                        <a href="https://oktayuyar.github.io/pages/python_post.html">Python</a>
+                    </li>
+                    <li>
+                        <a href="https://oktayuyar.github.io/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+	<header class="intro-header" style="background-image: url('https://oktayuyar.github.io/img/home-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>My Personal Blog</h1>
+                        <hr class="small">
+                        <span class="subheading">Full Time Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+		<p align="center"><img class="alignleft wp-image-243 size-full"  src="https://oktayuyar.github.io/img/java/java.png"  width="50%" height="180" sizes="(max-width: 729px) 100vw, 729px"></p>
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h3>Hibernate Crud İşlemleri</h3>
+					<p>Merhaba arkadaşlar bu yazımda hibernate ile crud işlemlerinden bahsedeceğim.Şimdi Eclipse'i açıp Hibernate1 adında bir java projesi oluşturalım.Projenin üzerine gelip sağ tık yapıp configure seçeneğinden Convert to Maven Project diyoruz.Daha sonra <strong>pom.xml</strong> i açıp  <strong>dependency</strong> lerimizi ekleyelim.</p>
+
+					<script src="https://gist.github.com/oktayuyar/ade0138c4598aed427c993b7d143fe7d.js"></script>
+
+					<p><strong>pom.xml</strong> i ayarladıktan sonra alttaki resimdeki gibi package ve classlarımızı oluşturalım.<img class="alignleft wp-image-243 size-full" src="https://oktayuyar.github.io/img/java/hibernate_project.png" height="100%" sizes="(max-width: 729px) 100vw, 729px"></p>
+
+					<p>Daha sonra <strong>hibernate.cfg.xml</strong> i açıp veritabanına bağlantı kısmını ayarlayacağız.Buradaki ayarları kendi mysql ayarlarınıza göre düzenlemeyi unutmayınız.</p>
+
+					<script src="https://gist.github.com/oktayuyar/a4b8a0494b022582b68566b00a060c29.js"></script>
+					
+					<p></p>
+
+				<a href="https://yadi.sk/d/309CXRqg36Hszq" target="_blank" value="Deneme">Projenin kaynak koduna buraya tıklayarak ulaşabilirisiniz</a>
+                </div>
+            </div>
+        </div>
+    </article>
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://github.com/oktayuyar/" target="_blank" title="GitHub">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://tr.linkedin.com/in/oktayuyarr" target="_blank" title="LinkedIn">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:oktyuyar@gmail.com" target="_blank" title="Email">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-send fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://oktayuyar.github.io/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://oktayuyar.github.io/js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="https://oktayuyar.github.io/js/jqBootstrapValidation.js"></script>
+    <script src="https://oktayuyar.github.io/js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="https://oktayuyar.github.io/js/clean-blog.min.js"></script>
+ 
+    <!-- SyntaxHighlighter -->
+	<script type="text/javascript" src="https://oktayuyar.github.io/js/shCore.js"></script>
+	<script src="https://oktayuyar.github.io/js/shBrushJava.js"></script>
+	<script src="https://oktayuyar.github.io/js/shBrushSql.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+</body>
+
+</html>
