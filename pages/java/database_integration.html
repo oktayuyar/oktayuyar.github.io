@@ -24,8 +24,6 @@
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-	<link type="text/css" rel="stylesheet" href="https://oktayuyar.github.io/css/shCoreDefault.css"/>
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -101,191 +99,21 @@
 				<p>Ben Java'da proje geliştirirken Eclipse tercih ediyorum.Şimdi Eclipse'i açıp DatabaseIntegration adında bir java projesi oluşturalım.Daha sonra projenin üzerine gelip sağ tık yapıp configure seçeneğinden Convert to Maven Project diyoruz.Neden maven projecte çevirdiğimi ayrı bir yazıda bahsedeceğim.<br>
 				Projemizi oluşturduktan sonra verileri ekleyeceğimiz veritabanımızı oluşturalım.Mysql veritabanı kullanacağım.</p>
 
-				<div>
-				<pre class="brush: sql;">
-				CREATE TABLE IF NOT EXISTS `iris` (
-				  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-				  `cyaprak_boyu` double DEFAULT NULL,
-				  `cyaprak_eni` double DEFAULT NULL,
-				  `tyaprak_boyu` double DEFAULT NULL,
-				  `tyaprak_eni` double DEFAULT NULL,
-				  `cicek_turu` varchar(250) DEFAULT NULL,
-				  PRIMARY KEY (`id`)
-				) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-				</pre>
-				</div>
+				<script src="https://gist.github.com/oktayuyar/47a65889b650dd4f783fbdec461823f5.js"></script>
+
 				Daha sonra projeye tekrar dönüyoruz, <strong>pom.xml</strong> i açalım ve <strong>mysql</strong> için dependency ekleyelim.</p>
 				<p><img class="alignleft wp-image-243 size-full" src="https://oktayuyar.github.io/img/java/pom_xml.png"  width="100%" height="250" sizes="(max-width: 729px) 100vw, 729px"></p>
-				Şimdi projemizin kodlamasına başlayabiliriz.Eclipse e dönüp proje içinde src ye sağ tık yapıp IrisIntegration adında yeni bir package oluşturalım.Bu package içinde üç java classımız olacak.İlk olarak IrisIntegration package ına sağ tıklayıp DatabaseConnection adında bir java classı oluşturalım.Bu classta veritabanına bağlanacağız.Classımızın içeriği aşağıdaki gibi olmalıdır.<br>
-				<div>
-				<pre class="brush: java;">
-				import java.sql.Connection;
-				import java.sql.DriverManager;
+				<p>Şimdi projemizin kodlamasına başlayabiliriz.Eclipse e dönüp proje içinde src ye sağ tık yapıp IrisIntegration adında yeni bir package oluşturalım.Bu package içinde üç java classımız olacak.İlk olarak IrisIntegration package ına sağ tıklayıp DatabaseConnection adında bir java classı oluşturalım.Bu classta veritabanına bağlanacağız.Classımızın içeriği aşağıdaki gibi olmalıdır.</p>
 
-				public class DatabaseConnection {
-					     protected static final String SERVER="jdbc:mysql://localhost:3306/IrisDatabase";
-					     protected static final String KULLANICIADI="oktay";
-					     protected static final String SIFRE="";
-					     protected Connection connection=null;
-					     
-						public void baglan(){
-					         try{
-					             Class.forName("com.mysql.jdbc.Driver");
-					             connection=DriverManager.getConnection(SERVER,KULLANICIADI,SIFRE);
-					         }
-					         catch(Exception e){
-					             System.out.println(e.getMessage());
-					         }
-					     }
-					    public void baglantiKes(){
-					         try{
-					             connection.close();
-					         }
-					         catch(Exception e){
-					             System.out.println(e.getMessage());
-					         }
-					   }   
-				}
-				</pre></div>
+				<script src="https://gist.github.com/oktayuyar/8a13c06eb21df9ab72511a2b9f9efa5d.js"></script>
+
 				<p>Veritabanına bağlandıktan sonra yeni bir class oluşturup veritabanındaki tablumuza göre modelimizi oluşturacağız.Insert işlemi için kodumuzu yazacağız. </p>
+				<script src="https://gist.github.com/oktayuyar/e495be0bb8d01b345ddf8bce799d2cb8.js"></script>
 				
-				<div>
-				<pre class="brush: java;">
-				package IrisIntegration;
-
-				import java.sql.PreparedStatement;
-
-
-				public class IrisModel extends DatabaseConnection{
-					private String id;
-					private String cyaprak_boyu;
-					private String cyaprak_eni;
-					private String tyaprak_boyu;
-					private String tyaprak_eni;
-					private String cicekturu;
-	
-					private PreparedStatement ps;
-					//Veriyi veritananına kaydettiğimiz fonksiyon
-					public boolean insertIris(IrisModel data) {
-						try {
-							DatabaseConnection vb=new DatabaseConnection();
-							vb.baglan();
-							String sorgu="insert into iris "
-								    +"(cyaprak_boyu ,cyaprak_eni,tyaprak_boyu,tyaprak_eni,cicek_turu)"
-								    +"values(?,?,?,?,?)";
-					   
-							ps = vb.connection.prepareStatement(sorgu);
-							ps.setString(1, cyaprak_boyu);
-							ps.setString(2, cyaprak_eni);
-							ps.setString(3, tyaprak_boyu);
-							ps.setString(4, tyaprak_eni);
-							ps.setString(5, cicekturu);
-							ps.execute();            
-						}
-						catch (Exception ex) {
-							return false;
-						}
-						return true;        
-					}
-
-					public String getId() {
-						return id;
-					}
-
-					public void setId(String id) {
-						this.id = id;
-					}
-
-					public String getCyaprak_boyu() {
-						return cyaprak_boyu;
-					}
-
-					public void setCyaprak_boyu(String cyaprak_boyu) {
-						this.cyaprak_boyu = cyaprak_boyu;
-					}
-
-					public String getCyaprak_eni() {
-						return cyaprak_eni;
-					}
-
-					public void setCyaprak_eni(String cyaprak_eni) {
-						this.cyaprak_eni = cyaprak_eni;
-					}
-
-					public String getTyaprak_boyu() {
-						return tyaprak_boyu;
-					}
-
-					public void setTyaprak_boyu(String tyaprak_boyu) {
-						this.tyaprak_boyu = tyaprak_boyu;
-					}
-
-					public String getTyaprak_eni() {
-						return tyaprak_eni;
-					}
-
-					public void setTyaprak_eni(String tyaprak_eni) {
-						this.tyaprak_eni = tyaprak_eni;
-					}
-
-					public String getCicekturu() {
-						return cicekturu;
-					}
-
-					public void setCicekturu(String cicekturu) {
-						this.cicekturu = cicekturu;
-					}
-
-				}
-				</pre>
-				</div>
 				<p>Son olarak Main classımızı oluşturuyoruz.Bu classta iris.txt dosyamızı okuyup split fonksiyonu ile parçalayıp IrisModel classından oluşturduğumuz nesnenin özelliklerine atayacağız. </p>
-				<div>
-				<pre class="brush: java;">
-				package IrisIntegration;
 
-				import java.io.BufferedReader;
-				import java.io.FileReader;
-				import java.io.IOException;
-				import java.util.ArrayList;
-				import java.util.List;
+				<script src="https://gist.github.com/oktayuyar/bdc6eb0c89fd276df0826c44e9c7f1c7.js"></script>
 
-				public class Main {
-
-					public static void main(String[] args) throws IOException {
-				        IrisModel data=new IrisModel();
-				        String path = "iris.txt";
-				        int sayac=0;
-				        List<String> list = new ArrayList<String>();
-						//Dataseti okuyoruz
-				        BufferedReader reader = new BufferedReader(new FileReader(path));
-				        String line;
-				        while ((line = reader.readLine()) != null) {
-				            list.add(line+","); //listeye ekliyoruz
-				          
-				        }
-				        reader.close();
-				        String listString = "";
-				        for(String s : list){
-				           listString += s; 
-				        }
-				        System.out.println(listString); 
-				        String[] parts = listString.split(","); //Verileri parçalayıp parts listesinde tutuyoruz
-				        
-				        for(int i=0;i<=parts.length;i++){	
-				            if(i%5==0){
-				            data.setCyaprak_boyu(parts[i]);
-				            data.setCyaprak_eni(parts[i+1]);
-				            data.setTyaprak_boyu(parts[i+2]);;
-				            data.setTyaprak_eni(parts[i+3]);
-				            data.setCicekturu(parts[i+4]);
-				            data.insertIris(data);
-				            }
-				        }
-				    }
-				}
-				</pre>
-				</div>	
 				<a href="https://yadi.sk/d/HmoY1bV533d9zJ" target="_blank" value="Deneme">Projenin kaynak koduna buraya tıklayarak ulaşabilirisiniz</a>
                 </div>
             </div>
@@ -345,12 +173,6 @@
     <!-- Theme JavaScript -->
     <script src="https://oktayuyar.github.io/js/clean-blog.min.js"></script>
  
-    <!-- SyntaxHighlighter -->
-	<script type="text/javascript" src="https://oktayuyar.github.io/js/shCore.js"></script>
-	<script src="https://oktayuyar.github.io/js/shBrushJava.js"></script>
-	<script src="https://oktayuyar.github.io/js/shBrushSql.js"></script>
-	<script type="text/javascript">SyntaxHighlighter.all();</script>
-
 </body>
 
 </html>
