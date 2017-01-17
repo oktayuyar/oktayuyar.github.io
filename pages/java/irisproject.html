@@ -109,15 +109,28 @@
 
 					<p><a class="example-image-link" href="https://oktayuyar.github.io/img/java/iris.png" data-lightbox="example-set" data-title="program anasayfası"><img src="https://oktayuyar.github.io/img/java/iris.png" class="example-image" width="100%" height="100%"></a></p>
 
-					<p>Bu projemde JavaFx ve Hibernate teknolojilerini kullanacağım.Hibernate ayar işlemleri için <a href="https://oktayuyar.github.io/pages/java/hibernate.html" target="_blank" value="Hibernate">buraya tıklayarak eski yazımı inceleyebilirsiniz.</a>JavaFx içinse eclipse kurulum yapmayı unutmayınız.Şimdi Eclipse'i açıp IrisProject adında bir java projesi oluşturalım.Projenin üzerine gelip sağ tık yapıp configure seçeneğinden Convert to Maven Project diyoruz.Daha sonra <strong>pom.xml</strong> i açıp  <strong>dependency</strong> lerimizi ekleyelim.</p>
+					<p>Bu projemde JavaFx ve Hibernate teknolojilerini kullanacağım.Hibernate ayarlamaları ve işlemleri için <a href="https://oktayuyar.github.io/pages/java/hibernate.html" target="_blank" value="Hibernate">buraya tıklayarak eski yazımı inceleyebilirsiniz.</a>O yazıyı incelemeniz bu projeyi daha anlaşılabilir kılacaktır.JavaFx içinse kurulum yapmayı unutmayınız.<br>
+					Şimdi Eclipse'i açıp IrisProject adında bir javafx projesi oluşturalım.Projenin üzerine gelip sağ tık yapıp configure seçeneğinden Convert to Maven Project diyoruz.Daha sonra <strong>pom.xml</strong> i açıp  <strong>dependency</strong> lerimizi ekleyelim.</p>
 
 					<script src="https://gist.github.com/oktayuyar/ade0138c4598aed427c993b7d143fe7d.js"></script>
 
 					<p><strong>pom.xml</strong> i ayarladıktan sonra alttaki resimdeki gibi  paketlerimizi oluşturalım.</p>
 
 					<p><a class="example-image-link" href="https://oktayuyar.github.io/img/java/iris_project.png" data-lightbox="example-set" data-title="proje paketleri"><img src="https://oktayuyar.github.io/img/java/iris_project.png" class="example-image" height="100%"></a></p>
+	
+					<p>Yazıyı çok uzatamak adına ben burada sadece Iris-setosa çiçek türünün olasılığının hesaplanmasını anlatacağım.Yazının sonunda projenin linki bulunmaktadır ordan indirip projeyi inceleyebilirsiniz.Model paketinin içinde classlarımızı oluşturup veritabanındaki tablolarımıza göre modellerimizi aşağıdaki gibi oluşturacağız.</p>
+				<script src="https://gist.github.com/oktayuyar/68a5db8c5d6b30a43b9897236b9eb327.js"></script>
+				<script src="https://gist.github.com/oktayuyar/1a029eec91e0b5be6c14823c27949e0d.js"></script>
+				<script src="https://gist.github.com/oktayuyar/c10b948748d8e06bb604f2ae43989358.js"></script>
+				
+				<p>Setosa modelimiz için SetosaDAO interface imizi açıyoruz ve metodlarımızı tanımlıyoruz.</p>
+				<script src="https://gist.github.com/oktayuyar/d4fe653de95b8513214ef85fa95dccb9.js"></script>
+				
+				<p>Şimdi SetosaDAOImpl classını açıyoruz ve SetosaDAO interface inden implemets ediyoruz.Metodları implement etmemiz için uyarı alacağız.Metodlarımızı implement ettikten sonra HibernateUtility classından session oluşturup metodlarımızı yazıyoruz.</p>
+				<script src="https://gist.github.com/oktayuyar/d00fdde6ca6044c48aae94023b0c63c1.js"></script>	
 
-					<p>Projenin kaynak kodu aşağıdaki linkte mevcuttur.Zaman buldukça anlatmaya devam edeceğim.Malum final haftası :) </p>
+				<p>Daha sonra HomePageController sınıfımızı açıyoruz ve ortalama hesaplama işlemini burada gerçekleştiriyoruz.</p>
+				<script src="https://gist.github.com/oktayuyar/88e247b2019e6b94cdb2b1e6fd6c3f04.js"></script>
 
 				<p><a href="https://github.com/oktayuyar/IrisProject" target="_blank" value="IrisProject">Projenin kaynak koduna buraya tıklayarak ulaşabilirisiniz</a>
 					</p>
