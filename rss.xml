@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<rss version="2.0">
+  <channel>
+    <title>My Personal Blog</title>
+    <link>https://oktayuyar.github.io</link>
+    <description />
+    <item>
+      <guid>https://oktayuyar.github.io/</guid>
+      <title>My Personal Blog</title>
+      <link>https://oktayuyar.github.io/</link>
+      <description>Oktay UYAR's Blog</description>
+    </item>
+    <item>
+      <guid>https://oktayuyar.github.io/pages/java/hibernate.html</guid>
+      <title>My Personal Blog</title>
+      <link>https://oktayuyar.github.io/pages/java/hibernate.html</link>
+      <description>Java Hibernate Framework</description>
+    </item>
+    <item>
+      <guid>https://oktayuyar.github.io/pages/java/iris_project.html</guid>
+      <title>My Personal Blog</title>
+      <link>https://oktayuyar.github.io/pages/java/iris_project.html</link>
+      <description>Bayes Algoritması İle İris Çiçek Türünün Tahmini</description>
+    </item>
+    <item>
+      <guid>https://oktayuyar.github.io/pages/python/django_kurulumu.html</guid>
+      <title>My Personal Blog</title>
+      <link>https://oktayuyar.github.io/pages/python/django_kurulumu.html</link>
+      <description>Python Django Kurulumu</description>
+    </item>
+    <item>
+      <guid>https://oktayuyar.github.io/pages/python/python_adamasmaca.html</guid>
+      <title>My Personal Blog</title>
+      <link>https://oktayuyar.github.io/pages/python/python_adamasmaca.html</link>
+      <description>Python Adam Asmaca</description>
+    </item>
+    <item>
+      <guid>https://oktayuyar.github.io/pages/java/database_integration.html</guid>
+      <title>My Personal Blog</title>
+      <link>https://oktayuyar.github.io/pages/java/database_integration.html</link>
+      <description>Java Mysql Insert</description>
+    </item>
+    <item>
+      <guid>https://oktayuyar.github.io/pages/linux/linux_dosya_sistemi.html</guid>
+      <title>My Personal Blog</title>
+      <link>https://oktayuyar.github.io/pages/linux/linux_dosya_sistemi.html</link>
+      <description>Linux Dosya Sistemi</description>
+    </item>
+    <item>
+      <guid>https://oktayuyar.github.io/contact.html</guid>
+      <title>Contact Me</title>
+      <link>https://oktayuyar.github.io/contact.html</link>
+      <description>Oktay UYAR's Blog</description>
+    </item>
+    <item>
+      <guid>https://oktayuyar.github.io/pages/ardunio_post.html</guid>
+      <title>My Personal Blog</title>
+      <link>https://oktayuyar.github.io/pages/ardunio_post.html</link>
+      <description>Ardunio</description>
+    </item>
+    <item>
+      <guid>https://oktayuyar.github.io/pages/python_post.html</guid>
+      <title>My Personal Blog</title>
+      <link>https://oktayuyar.github.io/pages/python_post.html</link>
+      <description>Python</description>
+    </item>
+    <item>
+      <guid>https://oktayuyar.github.io/pages/java_post.html</guid>
+      <title>My Personal Blog</title>
+      <link>https://oktayuyar.github.io/pages/java_post.html</link>
+      <description>Java</description>
+    </item>
+    <item>
+      <guid>https://oktayuyar.github.io/pages/linux_post.html</guid>
+      <title>My Personal Blog</title>
+      <link>https://oktayuyar.github.io/pages/linux_post.html</link>
+      <description>Linux</description>
+    </item>
+    <item>
+      <guid>https://oktayuyar.github.io/about.html</guid>
+      <title>About Me</title>
+      <link>https://oktayuyar.github.io/about.html</link>
+      <description>Oktay UYAR's Blog</description>
+    </item>
+    <item>
+      <guid>https://oktayuyar.github.io/index.html</guid>
+      <title>My Personal Blog</title>
+      <link>https://oktayuyar.github.io/index.html</link>
+      <description>Oktay UYAR's Blog</description>
+    </item>
+    <item>
+      <guid>https://oktayuyar.github.io/pages/ardunio/bluetooth_motor_kontrolu.html</guid>
+      <title>My Personal Blog</title>
+      <link>https://oktayuyar.github.io/pages/ardunio/bluetooth_motor_kontrolu.html</link>
+      <description>Ardunio DC Motor Kontrolü</description>
+    </item>
+    <item>
+      <guid>https://oktayuyar.github.io/pages/linux/linux_terminal_komutlari.html</guid>
+      <title>My Personal Blog</title>
+      <link>https://oktayuyar.github.io/pages/linux/linux_terminal_komutlari.html</link>
+      <description>Linux Temel Terminal Komutları</description>
+    </item>
+  </channel>
+</rss>
+<!--<guid value="b18b2436-045a-4a54-8562-3ab8bc221c7f" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
