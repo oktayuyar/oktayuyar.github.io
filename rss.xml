@@ -54,10 +54,10 @@
       <description>Oktay UYAR's Blog</description>
     </item>
     <item>
-      <guid>https://oktayuyar.github.io/pages/ardunio_post.html</guid>
+      <guid>https://oktayuyar.github.io/pages/arduino_post.html</guid>
       <title>My Personal Blog</title>
-      <link>https://oktayuyar.github.io/pages/ardunio_post.html</link>
-      <description>Ardunio</description>
+      <link>https://oktayuyar.github.io/pages/arduino_post.html</link>
+      <description>Arduino</description>
     </item>
     <item>
       <guid>https://oktayuyar.github.io/pages/python_post.html</guid>
@@ -90,10 +90,10 @@
       <description>Oktay UYAR's Blog</description>
     </item>
     <item>
-      <guid>https://oktayuyar.github.io/pages/ardunio/bluetooth_motor_kontrolu.html</guid>
+      <guid>https://oktayuyar.github.io/pages/arduino/bluetooth_motor_kontrolu.html</guid>
       <title>My Personal Blog</title>
-      <link>https://oktayuyar.github.io/pages/ardunio/bluetooth_motor_kontrolu.html</link>
-      <description>Ardunio DC Motor Kontrolü</description>
+      <link>https://oktayuyar.github.io/pages/arduino/bluetooth_motor_kontrolu.html</link>
+      <description>Arduino DC Motor Kontrolü</description>
     </item>
     <item>
       <guid>https://oktayuyar.github.io/pages/linux/linux_terminal_komutlari.html</guid>
