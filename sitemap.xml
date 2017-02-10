@@ -89,4 +89,16 @@
    <changefreq>daily</changefreq>
    <priority>0.8000</priority>
 </url>
+<url>
+   <loc>https://oktayuyar.github.io/pages/linux/linux_terminal_komutlari.html</loc>
+   <lastmod>2017-02-09T15:53:46+00:00</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://oktayuyar.github.io/pages/ardunio/bluetooth_motor_kontrolu.html</loc>
+   <lastmod>2017-02-09T15:53:46+00:00</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6400</priority>
+</url>
 </urlset>
