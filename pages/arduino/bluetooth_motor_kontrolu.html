@@ -106,7 +106,7 @@
             <div class="row">
                 <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <h3>Arduino DC Motor Kontrolü</h3>
-					<p>Merhaba arkadaşlar.Bu yazımda bluetooth üzerinden dc motor kontrolünden bahsedeceğim.</p>
+					<p>Merhaba arkadaşlar.Bu yazımda bluetooth üzerinden telefon ile dc motor kontrolünden bahsedeceğim.Bu devre mantığını isterseniz garaj kapısını telefonunuzdan kontrol etme gibi durumlarda kullanabilirsiniz.Projenin çalışma mantığı şöyle işliyor arkadaşlar.Telefondan 1 gönderdiğimiz zaman motor ileri doğru dönüyor.Telefondan 2 yolladığımızda motor geriye doğru dönüyor.Telefondan 0 yolladığımızda motor duruyor.</p>
 					<p><h4>Kullanacağımız malzemeler :</h4>
 						<ul type="disc">
 						<li>Arduino UNO</li>
@@ -117,10 +117,11 @@
 						<li>İki ucu erkek jumper kablo</li>
 						</ul>
 					</p>
-					<p>Dc motorumuzu bluetooth üzerinden kontrol etmemiz için hazırladığımız devre şemamız:</p>
+					<p>Dc motorumuzu bluetooth üzerinden kontrol etmemiz için hazırladığımız devre şemamız:<br>Devreyi kurarken bluetoothun rx ayağını arduinonun tx ayağına , bluetoothun tx ayağını arduinonun rx ayağına bağlamış olmamız gerekiyor.Oraya dikkat edelim.</p>
 					<p><a class="example-image-link" href="https://oktayuyar.github.io/img/arduino/bluetooth_devre_semasi.png" data-lightbox="example-set" data-title="devre şeması"><img src="https://oktayuyar.github.io/img/arduino/bluetooth_devre_semasi.png" class="example-image" width="100%" height="100%"></a></p>
-					<p>Motoru kontrol etmek için yazdığımız kodlarımız:</p>
+					<p>Motoru kontrol etmek için yazdığımız kodlarımız:<br>Bu arada kodlarımızı arduinoya yazdırırken rx ve tx bacaklarını arduinodan sökmemiz gerekiyor.Sökmezseniz kodu yazdırırken hata alacaksınız arkadaşlar.</p>
 					<script src="https://gist.github.com/oktayuyar/654df7bb941641aac91e5cc6e3df0524.js"></script>
+					<p>Şuan devremiz hazır ve arduinoya kodlarımızı yüklemiş bulunmaktayız.Son olarak <a href="https://play.google.com/store/apps/details?id=nextprototypes.BTSerialController&hl=tr" target="_blank" value="Linux Yaz Kampı">buraya tıklayarak </a>telefonumuza programımızı yüklüyoruz.Bluetootha bağlandıktan sonra alttaki textboxtan 1,2,0 yollayıp projeyi deneyebilirsiniz.Ayrıca programı açtığınızda def olarak gözüken butonlara atama yapıp ordanda komutları gönderebiliriz.Videoda ben butonlara komut verip öyle çalıştırdım.</p>
 					<p>Prejemizin çalışır halini aşağıdan izleyebilirsiniz.</p>
                		<div class="embed-responsive embed-responsive-16by9"><center><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/l64TXBwgerA" frameborder="0" allowfullscreen></iframe></center>
       				</div>
