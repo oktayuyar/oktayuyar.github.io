@@ -1,89 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	  	  
+<!-- www.check-domains.com sitemap generator -->
 
 <url>
-  <loc>https://oktayuyar.github.io/</loc>
-  <lastmod>2017-02-26T21:08:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+   <loc>https://oktayuyar.github.io/</loc>
+   <lastmod>2017-03-01T15:01:30+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>1.0000</priority>
 </url>
 <url>
-  <loc>https://oktayuyar.github.io/index.html</loc>
-  <lastmod>2017-02-26T21:08:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+   <loc>https://oktayuyar.github.io/index.html</loc>
+   <lastmod>2017-03-01T15:01:30+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
 </url>
 <url>
-  <loc>https://oktayuyar.github.io/pages/linux_post.html</loc>
-  <lastmod>2017-02-26T21:08:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+   <loc>https://oktayuyar.github.io/pages/linux_post.html</loc>
+   <lastmod>2017-03-01T15:01:30+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
 </url>
 <url>
-  <loc>https://oktayuyar.github.io/pages/java_post.html</loc>
-  <lastmod>2017-02-26T21:08:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+   <loc>https://oktayuyar.github.io/pages/java_post.html</loc>
+   <lastmod>2017-03-01T15:01:30+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
 </url>
 <url>
-  <loc>https://oktayuyar.github.io/pages/python_post.html</loc>
-  <lastmod>2017-02-26T21:08:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+   <loc>https://oktayuyar.github.io/pages/python_post.html</loc>
+   <lastmod>2017-03-01T15:01:30+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
 </url>
 <url>
-  <loc>https://oktayuyar.github.io/pages/arduino_post.html</loc>
-  <lastmod>2017-02-26T21:08:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+   <loc>https://oktayuyar.github.io/pages/arduino_post.html</loc>
+   <lastmod>2017-03-01T15:01:30+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
 </url>
 <url>
-  <loc>https://oktayuyar.github.io/contact.html</loc>
-  <lastmod>2017-02-26T21:08:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+   <loc>https://oktayuyar.github.io/contact.html</loc>
+   <lastmod>2017-03-01T15:01:29+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
 </url>
 <url>
-  <loc>https://oktayuyar.github.io/pages/linux/linux_dosya_sistemi.html</loc>
-  <lastmod>2017-02-26T21:08:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+   <loc>https://oktayuyar.github.io/pages/linux/linux_dosya_sistemi.html</loc>
+   <lastmod>2017-03-01T15:01:30+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
 </url>
 <url>
-  <loc>https://oktayuyar.github.io/about.html</loc>
-  <lastmod>2017-02-26T21:08:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+   <loc>https://oktayuyar.github.io/about.html</loc>
+   <lastmod>2017-03-01T15:01:29+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
 </url>
 <url>
-  <loc>https://oktayuyar.github.io/pages/linux/linux_terminal_komutlari.html</loc>
-  <lastmod>2017-02-26T21:08:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+   <loc>https://oktayuyar.github.io/pages/linux/linux_terminal_komutlari.html</loc>
+   <lastmod>2017-03-01T15:01:30+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
 </url>
 <url>
-  <loc>https://oktayuyar.github.io/pages/java/database_integration.html</loc>
-  <lastmod>2017-02-26T21:08:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+   <loc>https://oktayuyar.github.io/pages/linux/ozgur_yazilim.html</loc>
+   <lastmod>2017-03-01T15:01:30+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
 </url>
 <url>
-  <loc>https://oktayuyar.github.io/pages/java/hibernate.html</loc>
-  <lastmod>2017-02-26T21:08:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+   <loc>https://oktayuyar.github.io/pages/java/database_integration.html</loc>
+   <lastmod>2017-03-01T15:01:30+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
 </url>
 <url>
-  <loc>https://oktayuyar.github.io/pages/java/iris_project.html</loc>
-  <lastmod>2017-02-26T21:08:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+   <loc>https://oktayuyar.github.io/pages/java/hibernate.html</loc>
+   <lastmod>2017-03-01T15:01:30+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
 </url>
 <url>
-  <loc>https://oktayuyar.github.io/pages/python/python_adamasmaca.html</loc>
-  <lastmod>2017-02-26T21:08:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+   <loc>https://oktayuyar.github.io/pages/java/iris_project.html</loc>
+   <lastmod>2017-03-01T15:01:30+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
 </url>
 <url>
-  <loc>https://oktayuyar.github.io/pages/python/django_kurulumu.html</loc>
-  <lastmod>2017-02-26T21:08:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+   <loc>https://oktayuyar.github.io/pages/python/python_adamasmaca.html</loc>
+   <lastmod>2017-03-01T15:01:30+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
 </url>
 <url>
-  <loc>https://oktayuyar.github.io/pages/arduino/bluetooth_motor_kontrolu.html</loc>
-  <lastmod>2017-02-26T21:08:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+   <loc>https://oktayuyar.github.io/pages/python/django_kurulumu.html</loc>
+   <lastmod>2017-03-01T15:01:30+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://oktayuyar.github.io/pages/arduino/bluetooth_motor_kontrolu.html</loc>
+   <lastmod>2017-03-01T15:01:30+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
 </url>
 </urlset>

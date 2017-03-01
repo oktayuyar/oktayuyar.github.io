@@ -7,7 +7,7 @@
     <description />
     <item>
       <guid>https://oktayuyar.github.io/</guid>
-      <title>My Personal Blog</title>
+      <title>Oktay UYAR's Blog</title>
       <link>https://oktayuyar.github.io/</link>
       <description>Oktay UYAR's Blog</description>
     </item>
@@ -19,87 +19,93 @@
     </item>
     <item>
       <guid>https://oktayuyar.github.io/pages/python_post.html</guid>
-      <title>My Personal Blog</title>
+      <title>Python Posts</title>
       <link>https://oktayuyar.github.io/pages/python_post.html</link>
       <description>Python</description>
     </item>
     <item>
       <guid>https://oktayuyar.github.io/pages/linux_post.html</guid>
-      <title>My Personal Blog</title>
+      <title>GNU/Linux</title>
       <link>https://oktayuyar.github.io/pages/linux_post.html</link>
       <description>GNU/Linux</description>
     </item>
     <item>
       <guid>https://oktayuyar.github.io/about.html</guid>
-      <title>My Personal Blog</title>
+      <title>Oktay UYAR About</title>
       <link>https://oktayuyar.github.io/about.html</link>
       <description>Oktay UYAR's Blog</description>
     </item>
     <item>
       <guid>https://oktayuyar.github.io/pages/arduino_post.html</guid>
-      <title>My Personal Blog</title>
+      <title>Arduino Posts</title>
       <link>https://oktayuyar.github.io/pages/arduino_post.html</link>
       <description>Arduino</description>
     </item>
     <item>
       <guid>https://oktayuyar.github.io/pages/linux/linux_terminal_komutlari.html</guid>
-      <title>My Personal Blog</title>
+      <title>GNU/Linux Temel Terminal Komutları</title>
       <link>https://oktayuyar.github.io/pages/linux/linux_terminal_komutlari.html</link>
       <description>GNU/Linux Temel Terminal Komutları</description>
     </item>
     <item>
       <guid>https://oktayuyar.github.io/index.html</guid>
-      <title>My Personal Blog</title>
+      <title>Oktay UYAR's Blog</title>
       <link>https://oktayuyar.github.io/index.html</link>
       <description>Oktay UYAR's Blog</description>
     </item>
     <item>
       <guid>https://oktayuyar.github.io/pages/java_post.html</guid>
-      <title>My Personal Blog</title>
+      <title>Java Posts</title>
       <link>https://oktayuyar.github.io/pages/java_post.html</link>
       <description>Java</description>
     </item>
     <item>
       <guid>https://oktayuyar.github.io/pages/arduino/bluetooth_motor_kontrolu.html</guid>
-      <title>My Personal Blog</title>
+      <title>Arduino DC Motor Kontrolü</title>
       <link>https://oktayuyar.github.io/pages/arduino/bluetooth_motor_kontrolu.html</link>
       <description>Arduino DC Motor Kontrolü</description>
     </item>
     <item>
       <guid>https://oktayuyar.github.io/pages/python/django_kurulumu.html</guid>
-      <title>My Personal Blog</title>
+      <title>Python Django Kurulumu</title>
       <link>https://oktayuyar.github.io/pages/python/django_kurulumu.html</link>
       <description>Python Django Kurulumu</description>
     </item>
     <item>
       <guid>https://oktayuyar.github.io/pages/linux/linux_dosya_sistemi.html</guid>
-      <title>My Personal Blog</title>
+      <title>Linux Dosya Sistemi</title>
       <link>https://oktayuyar.github.io/pages/linux/linux_dosya_sistemi.html</link>
       <description>Linux Dosya Sistemi</description>
     </item>
     <item>
       <guid>https://oktayuyar.github.io/pages/java/iris_project.html</guid>
-      <title>My Personal Blog</title>
+      <title>Bayes Algoritması İle İris Çiçek Türünün Tahmini</title>
       <link>https://oktayuyar.github.io/pages/java/iris_project.html</link>
       <description>Bayes Algoritması İle İris Çiçek Türünün Tahmini</description>
     </item>
     <item>
       <guid>https://oktayuyar.github.io/pages/python/python_adamasmaca.html</guid>
-      <title>My Personal Blog</title>
+      <title>Python Adam Asmaca</title>
       <link>https://oktayuyar.github.io/pages/python/python_adamasmaca.html</link>
       <description>Python Adam Asmaca</description>
     </item>
     <item>
       <guid>https://oktayuyar.github.io/pages/java/hibernate.html</guid>
-      <title>My Personal Blog</title>
+      <title>Java Hibernate CRUD Örneği</title>
       <link>https://oktayuyar.github.io/pages/java/hibernate.html</link>
       <description>Java Hibernate Framework</description>
     </item>
     <item>
       <guid>https://oktayuyar.github.io/pages/java/database_integration.html</guid>
-      <title>My Personal Blog</title>
+      <title>Java Mysql Database Örneği</title>
       <link>https://oktayuyar.github.io/pages/java/database_integration.html</link>
-      <description>Java Mysql Insert</description>
+      <description>Txt Dosyasının Veritabanına Kaydedilmesi </description>
+    </item>
+    <item>
+      <guid>https://oktayuyar.github.io/pages/linux/ozgur_yazilim.html</guid>
+      <title>Özgür Yazılım ve GNU/Linux</title>
+      <link>https://oktayuyar.github.io/pages/java/database_integration.html</link>
+      <description>Özgür Yazılım ve GNU/Linux Projesi</description>
     </item>
   </channel>
 </rss>
