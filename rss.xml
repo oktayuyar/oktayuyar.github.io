@@ -102,6 +102,12 @@
       <description>Txt Dosyasının Veritabanına Kaydedilmesi </description>
     </item>
     <item>
+      <guid>https://oktayuyar.github.io/pages/java/adresdefteri.html</guid>
+      <title>Adres Defteri Web Uygulaması</title>
+      <link>https://oktayuyar.github.io/pages/java/adresdefteri.html</link>
+      <description>JSF İle Geliştirilen Adres Defteri Web Uygulaması </description>
+    </item>
+    <item>
       <guid>https://oktayuyar.github.io/pages/linux/ozgur_yazilim.html</guid>
       <title>Özgür Yazılım ve GNU/Linux</title>
       <link>https://oktayuyar.github.io/pages/java/database_integration.html</link>
