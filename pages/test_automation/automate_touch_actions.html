@@ -6,9 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="">
-	<meta name="description" content="Adres Defteri Web Uygulaması"/>
-	<meta name="keywords" content="Java,JSF,JPA,Hibernate,Maven,Eclipse,Mysql,ORM,OOP"/>
+	<meta name="description" content="Test Automation"/>
+	<meta name="keywords" content="Test Automation,Automation,Java,Selenium,Appium"/>
 
     <title>Oktay's Blog</title>
 	<link rel="shortcut icon" href="https://oktayuyar.github.io/img/icon.png">
@@ -23,7 +22,6 @@
     <link href="https://oktayuyar.github.io/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://oktayuyar.github.io/css/lightbox.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -90,58 +88,19 @@
             </div>
         </div>
     </header>
+    <hr>
 
-	<p align="center"><img class="alignleft wp-image-243 size-full"  src="https://oktayuyar.github.io/img/java/java.png"  width="50%" height="180" sizes="(max-width: 729px) 100vw, 729px"></p>
+    <p align="center"><img class="alignleft wp-image-243 size-full"  src="https://oktayuyar.github.io/img/test_automation/test.jpeg"  width="50%" height="180" sizes="(max-width: 729px) 100vw, 729px"></p>
     <!-- Post Content -->
     <article>
         <div class="container">
             <div class="row">
                 <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">
-			<h3>Adres Defteri Web Uygulaması</h3>
-		    	<p>Merhaba arkadaşlar.Bu yazımda <a href="http://ozguryazilim.com.tr/" target="_blank" value="Özgür Yazılım">Özgür Yazılım A.Ş.</a> şirketine yaptığım staj başvurusunda, kabul sürecinde benden istedikleri basit bir web uygulamasını geliştirme sürecinden bahsedeceğim.Aşağıda gelen maili birebir görebilirsiniz.</p>
-		    	<p>* Sizi daha iyi değerlendirebilmek için, ufak bir yazılım geliştirmenizi isteyebilir miyiz?<br>
-			Şirketimize özel bir kod istemiyoruz, Github hesabınız üzerinden
-			yayınlamanızı istiyoruz. İleride referans olarak kullanabilirsiniz.
-			JSF, JPA, Maven teknolojilerini kullanarak basit bir adres defteri web
-			uygulaması geliştirmenizi istiyoruz:
-				<ul type="disc">
-					<li>Kişi / adres listesi alınabilmeli</li>
-					<li>Ad, Soyad alanlarından arama yapılabilmeli</li>
-					<li>Yeni adres kaydı yapılabilmeli</li>
-					<li>n adet telefon numarası girilebilmeli</li>
-					<li>E-posta adresi girilebilmeli</li>
-					<li>Var olan bir kayıt detayları incelenebilmeli</li>
-					<li> Var olan bir kayıt üzerinde değişiklik yapılabilmeli</li>
-					<li>Var olan bir kayıt silinebilmeli</li>
-					<li>İlgili alanlara hatalı bilgi girilememeli (ör: Ad, Soyad kısmında
-				rakam değeri olmaması)</li>
-				</ul>
-			<p>* Uygulamanın nasıl kurulacağı ve çalışır hale getirileceği ile ilgili
-			markdown ile bir belgeyi yazmanızı istiyoruz.</p>
-		    	</p>
-			<p>Gelen mailden sonra web uygulamasını geliştirmeye başladım.Projeyi Eclipse-Neon IDE üzerinden maven projesi olarak geliştirdim.<br>
-Şimdi Eclipse'i açıp AdresDefteri adında bir dynamic web project oluşturalım.Projeyi oluştururken dynamic web module 3.0 versionu seçelim ve configuration kısmını JavaServer Faces v2.0 Project yapalım.Proje oluşturulduktan sonra projenin üzerine gelip sağ tık yapıp configure seçeneğinden Convert to Maven Project diyoruz.Daha sonra <strong>pom.xml</strong> i açıp  <strong>dependency</strong> lerimizi ekleyelim.</p>
-			<script src="https://gist.github.com/oktayuyar/a6770886dd824921e940a5d96a88347e.js"></script>
-			<p>Hibernate konfigürasyonu ve util sınıfının yazılması kısımlarını önceki projelerden incelemenizi öneririm.Yazıyı uzatmamak adına bazı kısımları es geçeceğim. </p>
-	 		<p>İlk olarak veritabanı tasarımını yaptım.Kişi ve iletişim adında iki tablonun yeterli olacağını düşündüm.Mailde n tane telefon girilebilir dediği için telefon numaralarını iletişim tablosunda ayrı olarak tutmayı düşündüm.Kişi tablosu ile iletişim tablosu arasında one to many ilişkisi kurdum.Bu ilişkiye göre gerekli notasyonları yaptım.Cascade ve fecth kavramını merak edebilirsiniz.@OneToOne notasyonuna <strong>cascade=CascadeType.ALL</strong> ekleyerek sadece bir nesneyi save() ederek, 2 tabloya da aynı anda veri eklemiş oluruz.Fetch, çekim stratejisini (fetch strategy) yapılandırmaya olanak sunan bir özelliktir.Bir Entity nesnesinin sahip olduğu veriler, veritabanından elde edilirken 2 tip veri çekme stratejisi kullanılmaktadır. Bu tipler;<br>
-ihtiyaç halinde yüklemeyi temsil eden LAZY  ve anında yüklemeyi temsil eden EAGER‘dir.</p>
-			<script src="https://gist.github.com/oktayuyar/db753bc9c85cec6b347b65dcc042cc56.js"></script>
-			<p>Aşağıdaki kodları incelerseniz iletişim tablosuna kişi nesnesini ek kolon olarak ekliyorum.Böylece hangi telefonun kime ait olduğunu tutabiliyorum.Ek bir kolon olarak eklemeseydim hibernate ekstra bir tablo oluşturarak bir üçüncü tabloda bu bilgileri tutacaktı.</p>
-			<script src="https://gist.github.com/oktayuyar/b5c0936c9dd940907d29f289a2ea8287.js"></script>
-			<p>Tablolarımızı hazırlağımıza göre veritabanı işlemleri için KisiDAOImpl sınıfını açıp metodlarımızı yazmaya başlayabiliriz.Ben interface lerimizi oluşturdum.Github üzerinden inceleyiniz.</p>
-			<script src="https://gist.github.com/oktayuyar/1f744ae07d8cf780940364a5740e504b.js"></script>
-			<p>Daha sonra  IletisimDAOImpl sınıfını açıp veritabanı işlemleri için metodlarımızı yazmaya başlayabiliriz.</p>
-			<script src="https://gist.github.com/oktayuyar/46e9839c30e23d4723bb3dfc7664aa04.js"></script>
-			<p>Bu işlemleri yaptıktan sonra managed bean oluşturuyoruz.Managed Bean genel olarak ön yüzde yazdığımız jsf sayfasının iş mantığını içerir.Ayrıca ön yüzde form mantığıyla aldığımız değerleri managed bean içerisinde saklarız.Jsf sayfalarımız ile java sınıflarımız managedbean aracılığıyla  haberleşir diye düşünebiliriz.</p>
-			<script src="https://gist.github.com/oktayuyar/512667716921f4d85ef27d5dbe77e26c.js"></script>
-			<p>Arayüz kısmını nasıl oluşturduğumu aşağıdan görebilirsiniz.</p>
-			<p><a class="example-image-link" href="https://oktayuyar.github.io/img/java/index.png" data-lightbox="example-set" data-title="pom.xml"><img src="https://oktayuyar.github.io/img/java/index.png" class="example-image" width="100%" height="100%" sizes="(max-width: 729px) 100vw, 729px"></a></p>
-			<p><a class="example-image-link" href="https://oktayuyar.github.io/img/java/detay.png" data-lightbox="example-set" data-title="pom.xml"><img src="https://oktayuyar.github.io/img/java/detay.png" class="example-image" width="100%" height="100%" sizes="(max-width: 729px) 100vw, 729px"></a></p>
+                <h3>IOS İçin Dokunma Hareketlerini Otomatize Etme</h3>
+				<p>Merhaba arkadaşlar.Bu yazımda size ios cihazlarda karşılaştığım harita üzerinde yakınlaştırma ve uzaklaştırma sorununu nasıl çözdüğümden
+				bahsedeceğim.</p>
 
-
-
-			<a href="https://github.com/oktayuyar/AdresDefteri" target="_blank" value="Deneme">Projenin kaynak koduna buraya tıklayarak ulaşabilirisiniz.</a>
-                </div>
+				</div>
             </div>
         </div>
     </article>
@@ -192,7 +151,9 @@ ihtiyaç halinde yüklemeyi temsil eden LAZY  ve anında yüklemeyi temsil eden 
     <!-- Bootstrap Core JavaScript -->
     <script src="https://oktayuyar.github.io/js/bootstrap.min.js"></script>
 
- 	<script src="https://oktayuyar.github.io/js/lightbox-plus-jquery.min.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="https://oktayuyar.github.io/js/jqBootstrapValidation.js"></script>
+    <script src="https://oktayuyar.github.io/js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="https://oktayuyar.github.io/js/clean-blog.min.js"></script>
@@ -205,6 +166,7 @@ ihtiyaç halinde yüklemeyi temsil eden LAZY  ve anında yüklemeyi temsil eden 
 		  ga('create', 'UA-88751656-1', 'auto');
 		  ga('send', 'pageview');
 	</script>
+
 </body>
 
 </html>
