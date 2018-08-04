@@ -100,8 +100,19 @@
                 <div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <h3>Robot Framework ile Test Otomasyonu</h3>
 				            <p>Merhaba arkadaşlar.Bu yazımda robot framework ile pythonda nasıl test otomasyonu geliştirebileceğimizi anlatacağım.
-          Bütün kurulumları birlikte yaparak otomasyon projesini çalışır hale getireceğiz. </p>
-                    <p>Projemizde python 2.x desteği 2020 yılında biteceğinden python 3.x kullanacağız. Ayrıca proje için virtual environment oluşturacağız.
+                      Bütün kurulumları birlikte yaparak otomasyon projesini çalışır hale getireceğiz. </p>
+                    <p>Öncelikle robot framework hakkında biraz bilgi vermek istiyorum.
+                      Robot framework, kullanıcı kabul testi ve kabul test odaklı geliştirme için kullanılan bir test otomasyon framework'üdür.
+                      İçerdiği yan kütüphaneler sayesinde web, mobil ve desktop uygulamaları için test otomasyonuna olanak sağlamaktadır.
+                      Python ve java programlama dillerini desteklemektedir.
+                    </p>
+                    <p>
+                      Kullanım açısından kolaylıklarını belirtmek gerekirse test sonuçlarını otomatik olarak html şeklinde raporlama yapmaktadır
+                      ve hata alan kısımlarda ekran görüntüsü almaktadır.
+                    </p>
+                    <p>Şimdi amazon.com üzerinde örnek bir login senaryosu yazacağız. Projeyi ptyhon ile geliştireceğim.
+                      Projemizde python 2.x desteği 2020 yılında biteceğinden python 3.x kullanacağız.
+                      Ayrıca proje için virtual environment oluşturacağız.
                       Virtual environment oluşturmamızdaki amaç projemiz için kullanacağımız python sürümünü
                       ve gereksinimleri sistemden izole şekilde kurup kullanabilmektir.
                     </p>
@@ -133,8 +144,9 @@
                     <p> Şuanda geliştirme yapmak için ortamımız hazır. Chrome driver'ı yükledikten sonra geliştirme yapmaya başlayabiliriz.
                       Ben ide olarak robotframework autocomplete desteklediği için atomu kullanıyorum.
                       Atom'u  <a href="https://atom.io/" target="_blank" value="Atom">bu linkten</a> indirebilirsiniz.
-                      Atom'u kurduktan sonra robotframework desteği için aşağıdaki eklenti kurmamız gerekiyor.
-                      Sırasıyla kodları terminalimizde çalıştırmamız gerekiyor.
+                      Atom'u kurduktan sonra robotframework desteği için eklenti kurmamız gerekiyor.
+                      Chrome driver kurulumu ve atom eklentisi için
+                      sırasıyla kodları terminalimizde çalıştırmamız gerekiyor.
                     </p>
                     <pre class="brush: powershell	;">
                       # chromedriver kurulumu
@@ -143,7 +155,7 @@
                       Oktays-MacBook-Pro:~ macbook$ apm install language-robot-framework
                       Oktays-MacBook-Pro:~ macbook$ apm install autocomplete-robot-framework</pre>
 
-                        <p>Kurulum işlemlerini tamamladıktan sonra atomda projemizi açalım. resource.robot ve Sample.robot dosyalarını oluşturalım. 
+                        <p>Kurulum işlemlerini tamamladıktan sonra atomda projemizi açalım. resource.robot ve Sample.robot dosyalarını oluşturalım.
                           Projemizin yapısı aşağıdaki fotoğrafta olduğu gibi olmalıdır.</p>
               					<p><a class="example-image-link" href="https://oktayuyar.github.io/img/test_automation/robot_project.png" data-lightbox="example-set" data-title="proje paketleri"><img src="https://oktayuyar.github.io/img/test_automation/robot_project.png" class="example-image" height="100%"></a></p>
 
