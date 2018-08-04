@@ -101,26 +101,23 @@
                 <h3>Robot Framework ile Test Otomasyonu</h3>
 				            <p>Merhaba arkadaşlar.Bu yazımda robot framework ile pythonda nasıl test otomasyonu geliştirebileceğimizi anlatacağım.
           Bütün kurulumları birlikte yaparak otomasyon projesini çalışır hale getireceğiz. </p>
-                    <p>Projemizde python 2.x desteği 2020 yılında biteceğinden python 3.7 kullanacağız. Ayrıca proje için virtual environment oluşturacağız.
+                    <p>Projemizde python 2.x desteği 2020 yılında biteceğinden python 3.x kullanacağız. Ayrıca proje için virtual environment oluşturacağız.
                       Virtual environment oluşturmamızdaki amaç projemiz için kullanacağımız python sürümünü
                       ve gereksinimleri sistemden izole şekilde kurup kullanabilmektir.
                     </p>
-                    <p>Ben kurulumu bir gnu/linux sever olarak linux mint üzerinde yapacağım.
+                    <p>Ben kurulumu mac os üzerinde yapacağım.
                       Şimdi terminalimizi açalım ve proje klasörümüzü oluşturup izole ortamımızı oluşturalım.
                     </p>
                     <pre class="brush: powershell	;">
-                        oktay@oktay-asus ~ $ mkdir RobotFrameworkExample
-                        oktay@oktay-asus ~ $ cd RobotFrameworkExample
-                        oktay@oktay-asus:~/RobotFrameworkExample $  python3 -m  venv venv
-                        oktay@oktay-asus:~/RobotFrameworkExample $  cd venv</pre>
+                        Oktays-MacBook-Pro:~ macbook$ mkdir RobotFrameworkExample
+                        Oktays-MacBook-Pro:~ macbook$ cd RobotFrameworkExample
+                        Oktays-MacBook-Pro:RobotFrameworkExample macbook$ python3 -m  venv venv
+                        Oktays-MacBook-Pro:RobotFrameworkExample macbook$ cd venv</pre>
                     <p>Şuanda projemizi ve izole ortamımızı oluşturmuş bulunmaktayız. Şimdi izole ortamımızı aktif edelim.</p>
-
                     <pre class="brush: powershell	;">
-                        oktay@oktay-asus:~/RobotFrameworkExample/venv $ source bin/activate
-                    </pre>
-                    <p>İzole ortamımızın aktif olduğunu aşağıda görebiliriz.</p>
-                    <pre class="brush: powershell	;">
-                        (venv)oktay@oktay-asus:~/RobotFrameworkExample/venv $
+                        Oktays-MacBook-Pro:venv macbook$ source bin/activate
+                        #İzole ortamımızın aktif olduğunu aşağıda görebiliriz.
+                        (venv) Oktays-MacBook-Pro:venv macbook$
                     </pre>
                     <p> Daha sonra gerekli bağımlılıkları yükleyebiliriz.
                       <ul type="disc">
@@ -129,25 +126,25 @@
               				</ul>
                     </p>
                     <pre class="brush: powershell	;">
-                        (venv)oktay@oktay-asus:~/RobotFrameworkExample/venv $ pip install --upgrade pip
-                        (venv)oktay@oktay-asus:~/RobotFrameworkExample/venv $ pip install robotframework
-                        (venv)oktay@oktay-asus:~/RobotFrameworkExample/venv $ pip install robotframework-selenium2library
+                        (venv) Oktays-MacBook-Pro:venv macbook$ pip install --upgrade pip
+                        (venv) Oktays-MacBook-Pro:venv macbook$ pip install robotframework
+                        (venv) Oktays-MacBook-Pro:venv macbook$ pip install robotframework-selenium2library
                     </pre>
                     <p> Şuanda geliştirme yapmak için ortamımız hazır. Chrome driver'ı yükledikten sonra geliştirme yapmaya başlayabiliriz.
                       Ben ide olarak robotframework autocomplete desteklediği için atomu kullanıyorum.
                       Atom'u  <a href="https://atom.io/" target="_blank" value="Atom">bu linkten</a> indirebilirsiniz.
-                      Atom'u kurduktan sonra robotframework desteği için aşağıdaki kodları terminalimizde çalıştırmamız gerekiyor.
+                      Atom'u kurduktan sonra robotframework desteği için aşağıdaki eklenti kurmamız gerekiyor.
+                      Sırasıyla kodları terminalimizde çalıştırmamız gerekiyor.
                     </p>
                     <pre class="brush: powershell	;">
-                        oktay@oktay-asus ~ $ sudo apt-get install chromium-chromedriver
-                        oktay@oktay-asus ~ $ sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
-                        oktay@oktay-asus ~ $ sudo apt-get install atom
-                        oktay@oktay-asus ~ $ apm install language-robot-framework
-                        oktay@oktay-asus ~ $ apm install autocomplete-robot-framework</pre>
+                      # chromedriver kurulumu
+                      Oktays-MacBook-Pro:~ macbook$ brew cask install chromedriver
+                      # robot framework atom eklentisi
+                      Oktays-MacBook-Pro:~ macbook$ apm install language-robot-framework
+                      Oktays-MacBook-Pro:~ macbook$ apm install autocomplete-robot-framework</pre>
 
-
-
-                        <p>Kurulum işlemlerini tamamladıktan sonra ayarladıktan atomda projemizi açalım. resource.robot ve Sample.robot dosyalarını oluşturalım. Projemizin yapısı resimdeki gibi olmalıdır.</p>
+                        <p>Kurulum işlemlerini tamamladıktan sonra atomda projemizi açalım. resource.robot ve Sample.robot dosyalarını oluşturalım. 
+                          Projemizin yapısı aşağıdaki fotoğrafta olduğu gibi olmalıdır.</p>
               					<p><a class="example-image-link" href="https://oktayuyar.github.io/img/test_automation/robot_project.png" data-lightbox="example-set" data-title="proje paketleri"><img src="https://oktayuyar.github.io/img/test_automation/robot_project.png" class="example-image" height="100%"></a></p>
 
                         <p><a class="example-image-link" href="https://oktayuyar.github.io/img/test_automation/resource_settings.png" data-lightbox="example-set" data-title="proje paketleri"><img src="https://oktayuyar.github.io/img/test_automation/resource_settings.png" class="example-image" height="100%"></a></p>
