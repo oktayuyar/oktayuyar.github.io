@@ -114,6 +114,7 @@
                         oktay@oktay-asus:~/RobotFrameworkExample $  python3 -m  venv venv
                         oktay@oktay-asus:~/RobotFrameworkExample $  cd venv</pre>
                     <p>Şuanda projemizi ve izole ortamımızı oluşturmuş bulunmaktayız. Şimdi izole ortamımızı aktif edelim.</p>
+
                     <pre class="brush: powershell	;">
                         oktay@oktay-asus:~/RobotFrameworkExample/venv $ source bin/activate
                     </pre>
@@ -132,14 +133,19 @@
                         (venv)oktay@oktay-asus:~/RobotFrameworkExample/venv $ pip install robotframework
                         (venv)oktay@oktay-asus:~/RobotFrameworkExample/venv $ pip install robotframework-selenium2library
                     </pre>
-                    <p> Şuanda geliştirme yapmak için ortamımız hazır. Geliştirme yapmaya başlayabiliriz.
+                    <p> Şuanda geliştirme yapmak için ortamımız hazır. Chrome driver'ı yükledikten sonra geliştirme yapmaya başlayabiliriz.
                       Ben ide olarak robotframework autocomplete desteklediği için atomu kullanıyorum.
                       Atom'u  <a href="https://atom.io/" target="_blank" value="Atom">bu linkten</a> indirebilirsiniz.
                       Atom'u kurduktan sonra robotframework desteği için aşağıdaki kodları terminalimizde çalıştırmamız gerekiyor.
                     </p>
                     <pre class="brush: powershell	;">
+                        oktay@oktay-asus ~ $ sudo apt-get install chromium-chromedriver
+                        oktay@oktay-asus ~ $ sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
+                        oktay@oktay-asus ~ $ sudo apt-get install atom
                         oktay@oktay-asus ~ $ apm install language-robot-framework
                         oktay@oktay-asus ~ $ apm install autocomplete-robot-framework</pre>
+
+
 
                         <p>Kurulum işlemlerini tamamladıktan sonra ayarladıktan atomda projemizi açalım. resource.robot ve Sample.robot dosyalarını oluşturalım. Projemizin yapısı resimdeki gibi olmalıdır.</p>
               					<p><a class="example-image-link" href="https://oktayuyar.github.io/img/test_automation/robot_project.png" data-lightbox="example-set" data-title="proje paketleri"><img src="https://oktayuyar.github.io/img/test_automation/robot_project.png" class="example-image" height="100%"></a></p>
