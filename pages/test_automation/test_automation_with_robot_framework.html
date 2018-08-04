@@ -109,17 +109,17 @@
                       Şimdi terminalimizi açalım ve proje klasörümüzü oluşturup izole ortamımızı oluşturalım.
                     </p>
                     <pre class="brush: powershell	;">
-                        oktay@oktay-asus ~ $ mkdir RobotExample
-                        oktay@oktay-asus ~ $ cd RobotExample
-                        oktay@oktay-asus:~/RobotExample $  python3 -m  venv venv
-                        oktay@oktay-asus:~/RobotExample $  cd venv</pre>
+                        oktay@oktay-asus ~ $ mkdir RobotFrameworkExample
+                        oktay@oktay-asus ~ $ cd RobotFrameworkExample
+                        oktay@oktay-asus:~/RobotFrameworkExample $  python3 -m  venv venv
+                        oktay@oktay-asus:~/RobotFrameworkExample $  cd venv</pre>
                     <p>Şuanda projemizi ve izole ortamımızı oluşturmuş bulunmaktayız. Şimdi izole ortamımızı aktif edelim.</p>
                     <pre class="brush: powershell	;">
-                        oktay@oktay-asus:~/RobotExample/venv $ source bin/activate
+                        oktay@oktay-asus:~/RobotFrameworkExample/venv $ source bin/activate
                     </pre>
                     <p>İzole ortamımızın aktif olduğunu aşağıda görebiliriz.</p>
                     <pre class="brush: powershell	;">
-                        (venv)oktay@oktay-asus:~/RobotExample/venv $
+                        (venv)oktay@oktay-asus:~/RobotFrameworkExample/venv $
                     </pre>
                     <p> Daha sonra gerekli bağımlılıkları yükleyebiliriz.
                       <ul type="disc">
@@ -128,9 +128,9 @@
               				</ul>
                     </p>
                     <pre class="brush: powershell	;">
-                        (venv)oktay@oktay-asus:~/RobotExample/venv $ pip install --upgrade pip
-                        (venv)oktay@oktay-asus:~/RobotExample/venv $ pip install robotframework
-                        (venv)oktay@oktay-asus:~/RobotExample/venv $ pip install robotframework-selenium2library
+                        (venv)oktay@oktay-asus:~/RobotFrameworkExample/venv $ pip install --upgrade pip
+                        (venv)oktay@oktay-asus:~/RobotFrameworkExample/venv $ pip install robotframework
+                        (venv)oktay@oktay-asus:~/RobotFrameworkExample/venv $ pip install robotframework-selenium2library
                     </pre>
                     <p> Şuanda geliştirme yapmak için ortamımız hazır. Geliştirme yapmaya başlayabiliriz.
                       Ben ide olarak robotframework autocomplete desteklediği için atomu kullanıyorum.
