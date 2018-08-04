@@ -101,7 +101,7 @@
                 <h3>Robot Framework ile Test Otomasyonu</h3>
 				            <p>Merhaba arkadaşlar.Bu yazımda robot framework ile pythonda nasıl test otomasyonu geliştirebileceğimizi anlatacağım.
           Bütün kurulumları birlikte yaparak otomasyon projesini çalışır hale getireceğiz. </p>
-                    <p>Projemizde python2 desteği 2020 yılında biteceğinden python3 kullanacağız. Ayrıca proje için virtual environment oluşturacağız.
+                    <p>Projemizde python 2.x desteği 2020 yılında biteceğinden python 3.7 kullanacağız. Ayrıca proje için virtual environment oluşturacağız.
                       Virtual environment oluşturmamızdaki amaç projemiz için kullanacağımız python sürümünü
                       ve gereksinimleri sistemden izole şekilde kurup kullanabilmektir.
                     </p>
@@ -111,15 +111,15 @@
                     <pre class="brush: powershell	;">
                         oktay@oktay-asus ~ $ mkdir RobotExample
                         oktay@oktay-asus ~ $ cd RobotExample
-                        oktay@oktay-asus ~ $  python3 -m  venv venv
-                        oktay@oktay-asus ~ $  cd venv</pre>
+                        oktay@oktay-asus:~/RobotExample $  python3 -m  venv venv
+                        oktay@oktay-asus:~/RobotExample $  cd venv</pre>
                     <p>Şuanda projemizi ve izole ortamımızı oluşturmuş bulunmaktayız. Şimdi izole ortamımızı aktif edelim.</p>
                     <pre class="brush: powershell	;">
-                        oktay@oktay-asus ~ $ source bin/activate
+                        oktay@oktay-asus:~/RobotExample/venv $ source bin/activate
                     </pre>
                     <p>İzole ortamımızın aktif olduğunu aşağıda görebiliriz.</p>
                     <pre class="brush: powershell	;">
-                        (venv)  Oktays-MacBook-Pro:venv sahabt$
+                        (venv)oktay@oktay-asus:~/RobotExample/venv $
                     </pre>
                     <p> Daha sonra gerekli bağımlılıkları yükleyebiliriz.
                       <ul type="disc">
@@ -128,9 +128,9 @@
               				</ul>
                     </p>
                     <pre class="brush: powershell	;">
-                        (venv)  Oktays-MacBook-Pro:venv sahabt$ pip install --upgrade pip
-                        (venv)  Oktays-MacBook-Pro:venv sahabt$ pip install robotframework
-                        (venv)  Oktays-MacBook-Pro:venv sahabt$ pip install robotframework-selenium2library
+                        (venv)oktay@oktay-asus:~/RobotExample/venv $ pip install --upgrade pip
+                        (venv)oktay@oktay-asus:~/RobotExample/venv $ pip install robotframework
+                        (venv)oktay@oktay-asus:~/RobotExample/venv $ pip install robotframework-selenium2library
                     </pre>
                     <p> Şuanda geliştirme yapmak için ortamımız hazır. Geliştirme yapmaya başlayabiliriz.
                       Ben ide olarak robotframework autocomplete desteklediği için atomu kullanıyorum.
