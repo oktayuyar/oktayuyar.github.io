@@ -110,14 +110,14 @@
                       Kullanım açısından kolaylıklarını belirtmek gerekirse test sonuçlarını otomatik olarak html şeklinde raporlama yapmaktadır
                       ve hata alan kısımlarda ekran görüntüsü almaktadır.
                     </p>
-                    <p>Şimdi amazon.com üzerinde örnek bir login senaryosu yazacağız. Projeyi python ile geliştireceğim.
+                    <p>amazon.com üzerinde örnek bir login senaryosu yazacağız. Projeyi python ile geliştireceğim.
                       Projemizde python 2.x desteği 2020 yılında biteceğinden python 3.x kullanacağız.
                       Ayrıca proje için virtual environment oluşturacağız.
                       Virtual environment oluşturmamızdaki amaç projemiz için kullanacağımız python sürümünü
                       ve gereksinimleri sistemden izole şekilde kurup kullanabilmektir.
                     </p>
                     <p>Ben kurulumu mac os üzerinde yapacağım.
-                      Şimdi terminalimizi açalım ve proje klasörümüzü oluşturup izole ortamımızı oluşturalım.
+                      Terminalimizi açalım ve proje klasörümüzü oluşturup izole ortamımızı oluşturalım.
                     </p>
                     <pre class="brush: powershell	;">
                         Oktays-MacBook-Pro:~ macbook$ mkdir RobotFrameworkExample
@@ -141,7 +141,7 @@
                         (venv) Oktays-MacBook-Pro:venv macbook$ pip install robotframework
                         (venv) Oktays-MacBook-Pro:venv macbook$ pip install robotframework-selenium2library
                     </pre>
-                    <p> Şuanda geliştirme yapmak için ortamımız hazır. Chrome driver'ı yükledikten sonra geliştirme yapmaya başlayabiliriz.
+                    <p> Geliştirme yapmak için ortamımız hazır. Chrome driver'ı yükledikten sonra geliştirme yapmaya başlayabiliriz.
                       Ben ide olarak robotframework autocomplete desteklediği için atomu kullanıyorum.
                       Atom'u  <a href="https://atom.io/" target="_blank" value="Atom">bu linkten</a> indirebilirsiniz.
                       Atom'u kurduktan sonra robotframework desteği için eklenti kurmamız gerekiyor.
@@ -158,7 +158,7 @@
                         <p>Kurulum işlemlerini tamamladıktan sonra atomda projemizi açalım. resource.robot ve Sample.robot dosyalarını oluşturalım.
                           Projemizin yapısı aşağıdaki fotoğrafta olduğu gibi olmalıdır.</p>
                         <p><a class="example-image-link" href="https://oktayuyar.github.io/img/test_automation/robot_project.png" data-lightbox="example-set" data-title="proje paketleri"><img src="https://oktayuyar.github.io/img/test_automation/robot_project.png" class="example-image" height="100%" sizes="(max-width: 729px) 100vw, 729px"></a></p>
-                        <p> Şimdi resource.robot dosyasını açıp kodlamaya başlayalım.
+                        <p>resource.robot dosyasını açıp kodlamaya başlayalım.
                           Settings bloğu altında kullanacağımız framework'leri Library olarak import edebiliriz. Biz projemizde
                           Selenium2Library kullanacağımızdan onu import ediyoruz. Gereklilik halinde kendi oluşturduğumuz metodları
                           içeren python class'larını da Library olarak ekleyebiliriz.
@@ -175,11 +175,11 @@
                           target="_blank" value="Atom">bu linkten</a> yararlanabilirsiniz.
                         </p>
                         <p><a class="example-image-link" href="https://oktayuyar.github.io/img/test_automation/resource_keywords.png" data-lightbox="example-set" data-title="proje paketleri"><img src="https://oktayuyar.github.io/img/test_automation/resource_keywords.png" class="example-image" width="100%" height="100%"></a></p>
-                        <p> Şimdi Sample.robot dosyasını açalım ve login senaryouzu yazalım.
+                        <p>Sample.robot dosyasını açalım ve login senaryouzu yazalım.
                           Öncelikle Settings bloğu altında adımlarımızı tanımladığımız resource.robot dosyasını
                           import edelim. Daha sonra Test Cases bloğu altında senaryomuzu oluşturalım. Senaryomuzu
                           oluştururken framework'ün bize verdiği metodlarla birlikte resource.robot içinde
-                          oluşturduğumuz adımları kullanarak amazon.com üzerinde örnek login işlemini gerçekleştreceğiz.
+                          oluşturduğumuz adımları kullanarak amazon.com üzerinde örnek login işlemini gerçekleştireceğiz.
                           Aşağıda örnek senaryomuzu görüyoruz. Ben senaryomuzu terminal üzerinden aşağıdaki gibi çalıştırıyorum.
                         <p><a class="example-image-link" href="https://oktayuyar.github.io/img/test_automation/sample_case.png" data-lightbox="example-set" data-title="proje paketleri"><img src="https://oktayuyar.github.io/img/test_automation/sample_case.png" class="example-image" width="100%" height="100%"></a></p>
                         <pre class="brush: powershell	;">
