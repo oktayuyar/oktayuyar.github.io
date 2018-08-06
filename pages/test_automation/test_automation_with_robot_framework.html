@@ -158,14 +158,30 @@
                         <p>Kurulum işlemlerini tamamladıktan sonra atomda projemizi açalım. resource.robot ve Sample.robot dosyalarını oluşturalım.
                           Projemizin yapısı aşağıdaki fotoğrafta olduğu gibi olmalıdır.</p>
                         <p><a class="example-image-link" href="https://oktayuyar.github.io/img/test_automation/robot_project.png" data-lightbox="example-set" data-title="proje paketleri"><img src="https://oktayuyar.github.io/img/test_automation/robot_project.png" class="example-image" height="100%" sizes="(max-width: 729px) 100vw, 729px"></a></p>
-
+                        <p> Şimdi resource.robot dosyasını açıp kodlamaya başlayalım.
+                          Settings bloğu altında kullanacağımız framework'leri Library olarak import edebiliriz. Biz projemizde
+                          Selenium2Library kullanacağımızdan onu import ediyoruz. Gereklilik halinde kendi oluşturduğumuz metodları
+                          içeren python class'larını da Library olarak ekleyebiliriz.
+                        </p>
                         <p><a class="example-image-link" href="https://oktayuyar.github.io/img/test_automation/resource_settings.png" data-lightbox="example-set" data-title="proje paketleri"><img src="https://oktayuyar.github.io/img/test_automation/resource_settings.png" class="example-image" width="100%" height="100%"></a></p>
-
+                        <p> Variables bloğu altında sabitlerimizi tanımlıyoruz. Senaryomuz hangi browser üzerinde çalışacak, hangi url'e gidecek gibi
+                          tanımlamaları Variables bloğu altında tanılıyoruz.
+                        </p>
                         <p><a class="example-image-link" href="https://oktayuyar.github.io/img/test_automation/resource_variables.png" data-lightbox="example-set" data-title="proje paketleri"><img src="https://oktayuyar.github.io/img/test_automation/resource_variables.png" class="example-image" width="100%" height="100%"></a></p>
-
+                        <p> Keywords bloğu altında steplerimizi oluşturuyoruz. Bu stepleri oluştururken default tanımlı adımları kullanabiliriz.
+                          Click veya send keywords işlemleri için arka tarafta metod oluştumamıza gerek kalmadan
+                          framework'ün sağladığı kolaylıkla kullanabiliriz.
+                          Selenium2Library hakkında daha fazla bilgi edinmek için <a href="http://robotframework.org/Selenium2Library/Selenium2Library.html"
+                          target="_blank" value="Atom">bu linkten</a> yararlanabilirsiniz.
+                        </p>
                         <p><a class="example-image-link" href="https://oktayuyar.github.io/img/test_automation/resource_keywords.png" data-lightbox="example-set" data-title="proje paketleri"><img src="https://oktayuyar.github.io/img/test_automation/resource_keywords.png" class="example-image" width="100%" height="100%"></a></p>
-
-<p><a class="example-image-link" href="https://oktayuyar.github.io/img/test_automation/sample_case.png" data-lightbox="example-set" data-title="proje paketleri"><img src="https://oktayuyar.github.io/img/test_automation/sample_case.png" class="example-image" width="100%" height="100%"></a></p>
+                        <p> Şimdi Sample.robot dosyasını açalım ve login senaryouzu yazalım.
+                          Öncelikle Settings bloğu altında adımlarımızı tanımladığımız resource.robot dosyasını
+                          import edelim. Daha sonra Test Cases bloğu altında senaryomuzu oluşturalım. Senaryomuzu
+                          oluştururken framework'ün bize verdiği metodlarla birlikte resource.robot içinde
+                          oluşturduğumuz adımları kullanarak amazon.com üzerinde örnek login işlemini gerçekleştreceğiz.
+                        </p>
+                        <p><a class="example-image-link" href="https://oktayuyar.github.io/img/test_automation/sample_case.png" data-lightbox="example-set" data-title="proje paketleri"><img src="https://oktayuyar.github.io/img/test_automation/sample_case.png" class="example-image" width="100%" height="100%"></a></p>
                 </div>
             </div>
         </div>
